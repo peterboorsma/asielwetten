@@ -1,0 +1,27 @@
+{% set meedoen = craft.entries.section('meedoen').one() %}
+
+<div class="cta">
+    <div class="cta__header">
+        <h2>{{ meedoen.ctaOrgTitle }}</h2>
+    </div>
+
+    <div class="cta__content">
+        <div class="contentblock">
+            <div class="contentblock__text">
+                {{ meedoen.ctaOrgText }}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cta__footer">
+        <div class="btn-group">
+            {% set buttonEntry = meedoen.ctaOrgButtonLink.one() %}
+            {% if buttonEntry %}
+                <a href="{{ buttonEntry.url }}" class="btn btn--primary btn--green btn--greenFx">
+                    → {{  meedoen.ctaOrgButtonText }}
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

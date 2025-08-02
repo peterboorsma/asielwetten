@@ -65,9 +65,33 @@
         aspect-ratio: 16 / 9;
         background-color: var(--black);
     }
+
+    &__cols {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-block: 2rem;
+
+        @include breakpoint(md) { // 768px
+            flex-direction: row;
+        }
+
+        @include breakpoint(xl) { // 1280px
+            gap: 4rem;
+        }
+    }
 }
 
+.contentblock__cols__col {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
+    @include breakpoint(md) { // 768px
+        width: 50%;
+    }
+}
 
 ////////////////////////////////////////////////////
 // NIEUWS
@@ -280,4 +304,18 @@
             border-color: var(--red);
         }
     }
+}
+
+////////////////////////////////////////////////////
+// CTA Organisaties
+////////////////////////////////////////////////////
+
+
+.cta {
+    width: min(38rem,100vw - 4rem);
+    padding-block: 4rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }

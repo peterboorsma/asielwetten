@@ -1,13 +1,13 @@
+{% set overOns = craft.entries.section('overOns').one() %}
 
-{% if entry.matrixPartnerlinks.length %}
-    {% set partners = entry.partners %}
-
-
-<ul>
-    {% for partner in partners %}
-        <li>
-            <a href="{{ partner.partnerlink }}" rel="nofollow noopener" target="_blank">{{ partner.title }}</a>
-        </li>
-    {% endfor %}
-</ul>
+{% if overOns.partner %}
+    {% set partners = overOns.partner %}
+    <h3>Bondgenoten</h3>
+    <ul class="bondgenoten">
+        {% for partner in partners %}
+            <li>
+                <a href="{{ partner.partnerlink }}" rel="nofollow noopener" target="_blank">{{ partner.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 {% endif %}

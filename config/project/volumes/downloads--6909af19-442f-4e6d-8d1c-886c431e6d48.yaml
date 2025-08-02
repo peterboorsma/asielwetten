@@ -1,7 +1,7 @@
 altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
-  89682309-612c-43fc-b246-71514ae5fd2c:
+  bbe36655-8b9a-435a-915d-f50fed4220e4:
     cardThumbAlignment: end
     tabs:
       -
@@ -12,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-07-28T20:21:09+00:00'
+            dateAdded: '2025-08-02T11:35:35+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -33,15 +33,15 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: 7b57aa6d-4e04-4dac-8010-a4807abd184f
+            uid: 91e5f89b-0704-402b-ac94-a70118b66869
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-07-28T20:22:52+00:00'
+            dateAdded: '2025-08-02T11:39:04+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 8a24d274-81ff-485b-a833-2bb7f51b19f4 # Image
+            fieldUid: ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1 # Download
             handle: null
             includeInCards: false
             instructions: null
@@ -50,19 +50,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9e0edd88-3bfa-4e97-baa5-7e90424f9cee
+            uid: a1d77861-5e39-4416-92c1-efbc6e283198
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: df2f100e-a83c-4c76-b92b-e94e4957ce26
+        uid: f06f2c62-b2f3-49c9-9bc7-e565c381a6a1
         userCondition: null
 fs: localStorage
-handle: partnerlogos
-name: Partnerlogos
-sortOrder: 3
-subpath: partnerlogos
+handle: downloads
+name: Downloads
+sortOrder: 4
+subpath: downloads
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''
-transformSubpath: partnerlogos/transforms
+transformSubpath: ''

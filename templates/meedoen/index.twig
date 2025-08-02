@@ -16,6 +16,12 @@
                         <h2 class="pagetitle">{{ entry.title }}</h2>
                         {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
                     </header>
+
+                    {% if entry.intro %}
+                    <div class="contentblock__text">
+                        {{ entry.intro }}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -27,8 +33,51 @@
                         {{ entry.body }}
                     </div>
                 </div>
+
+                <div class="contentblock">
+                    <div class="contentblock__cols">
+                        <div class="contentblock__cols__col">
+                            <h3>Video</h3>
+
+                            <figure class="media--embed">
+                                {% set embed = craft.embeddedAssets.get(entry.video.one()) %}
+                                {% if embed %}
+                                    {{ embed.code }}
+                                {% endif %}
+                            </figure>
+
+                            {% if entry.videoText %}
+                                <div>{{ entry.videoText }}</div>
+                            {% endif %}
+
+                            {% set fileVideo = entry.fileVideo.one() %}
+                            {% if fileVideo %}
+                            <div class="btn-group">
+                                <a href="{{ fileVideo.url }}" class="btn btn--secondary btn--diap-green" target="_blank">↓ Download video</a>
+                            </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="contentblock__cols__col">
+                            <h3>Toolkit</h3>
+                            
+                            {% if entry.toolkitText %}
+                                <div>{{ entry.toolkitText }}</div>
+                            {% endif %}
+
+                            {% set fileToolkit = entry.fileToolkit.one() %}
+                            {% if fileToolkit %}
+                            <div class="btn-group">
+                                <a href="{{ fileToolkit.url }}" class="btn btn--secondary btn--diap-green" target="_blank">↓ Download toolkit</a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        {% include "_partials/_cta_organisaties.twig" %}
     </article>
 </main>
 

@@ -17,9 +17,11 @@
                         {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
                     </header>
 
+                    {% if entry.intro %}
                     <div class="contentblock__text">
-                        {% if entry.intro %}{{ entry.intro }}{% endif %}
+                        {{ entry.intro }}
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

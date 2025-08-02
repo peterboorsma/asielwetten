@@ -1,4 +1,4 @@
-dateModified: 1754131798
+dateModified: 1754135919
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -37,6 +37,7 @@ meta:
     1541c9cc-8eac-456a-9dc1-fc556741c310: 'Social media link' # Social media link
     3288ca7d-f208-402b-bd8f-66be98e80794: Actieblokken # Actieblokken
     04365d94-514d-42e9-a6a7-020827330159: 'Blijf op de hoogte' # Blijf op de hoogte
+    6909af19-442f-4e6d-8d1c-886c431e6d48: Downloads # Downloads
     97489fb8-6d23-47bf-9b97-f9d05afe8ce6: Meedoen # Meedoen
     03454957-74aa-41de-9070-a96fcc4ec80d: Meedoen # Meedoen
     12850798-946a-4531-a231-f9e868cf34e8: 'SEO Title' # SEO Title
@@ -50,7 +51,7 @@ meta:
     caec2669-e4fb-47d1-b280-d69f8e0f0eaa: Images # Images
     cd097818-5357-4ae3-8c53-200e0cfa5b51: 'Matrix Meedoen Acties' # Matrix Meedoen Acties
     d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5: 'Plain Text Multiline' # Plain Text Multiline
-    f13add3f-9028-4bde-8aac-5b72ab5f0bd1: Partnerlogos # Partnerlogos
+    ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1: Download # Download
 plugins:
   ckeditor:
     edition: standard

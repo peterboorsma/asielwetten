@@ -161,23 +161,6 @@ fieldLayouts:
             dateAdded: '2025-08-01T08:52:51+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
-            handle: videotext
-            includeInCards: false
-            instructions: null
-            label: 'Tekst bij video'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 76acd15a-f578-41c9-843f-9fb5760e360e
-            userCondition: null
-            warning: null
-            width: 75
-          -
-            dateAdded: '2025-08-01T08:52:51+00:00'
-            editCondition: null
-            elementCondition: null
             fieldUid: 7a2b019e-db5b-4d0b-b9bd-e69504df603f # Embed
             handle: video
             includeInCards: false
@@ -191,12 +174,63 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 25
+          -
+            dateAdded: '2025-08-02T11:40:36+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1 # Download
+            handle: fileVideo
+            includeInCards: false
+            instructions: 'MP4 bestand'
+            label: 'Upload video file'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d38608a3-88fc-44d7-8ba3-454aa4c0d18f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-01T08:52:51+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: videoText
+            includeInCards: false
+            instructions: null
+            label: 'Tekst bij video'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76acd15a-f578-41c9-843f-9fb5760e360e
+            userCondition: null
+            warning: null
+            width: 75
         name: 'Blok video'
         uid: 16cc5dae-c352-43e5-9a90-552056074870
         userCondition: null
       -
         elementCondition: null
         elements:
+          -
+            dateAdded: '2025-08-02T11:39:28+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1 # Download
+            handle: fileToolkit
+            includeInCards: false
+            instructions: '.zip file'
+            label: 'Upload toolkit'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89e84986-df6e-4dab-808b-6a2846fedeed
+            userCondition: null
+            warning: null
+            width: 25
           -
             dateAdded: '2025-08-01T08:53:52+00:00'
             editCondition: null
