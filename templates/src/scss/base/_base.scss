@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.figtree-400 {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --black: rgb(5, 2, 3);
+    --white: rgb(255, 255, 255);
+    --red: rgb(218, 71, 38);
+    --green: rgb(0, 148, 74);
+    --yellow: rgb(255, 232, 94);
+
+////////////////////////////////////////////////////
+// BREAKPOINTS
+////////////////////////////////////////////////////
+    $breakpoints: (
+        "xs": 0,
+        // 0px              
+        "sm": 24rem,
+        // 384px
+        "md": 48rem,
+        // 768px
+        "lg": 64rem,
+        // 1024px
+        "xl": 80rem,
+        // 1280px
+        "xxl": 90rem,
+        // 1440px
+        "xxxl": 120rem,
+        // 1920px
+        "xxxxl": 160rem
+        // 2560px
+    );
+
+}
+
+////////////////////////////////////////////////////
+// BREAKPOINTS LOGIC
+////////////////////////////////////////////////////
+@mixin breakpoint($point) {
+    @if $point ==xs {
+        @media (min-width: 0) {
+            @content;
+        }
+    }
+
+    @else if $point ==sm {
+        @media (min-width: 24rem) { // 384px
+            @content;
+        }
+    }
+
+    @else if $point ==md {
+        @media (min-width: 48rem) { // 768px
+            @content;
+        }        
+    }
+
+    @else if $point ==lg {
+        @media (min-width: 64rem) { // 1024px
+            @content;
+        }
+    }
+
+    @else if $point ==xl { // 1280px
+        @media (min-width: 80rem) {
+            @content;
+        }
+    }
+
+    @else if $point ==xxl { // 1440px
+        @media (min-width: 90rem) {
+            @content;
+        }
+    }
+
+    @else if $point ==xxxl { // 1920px
+        @media (min-width: 120rem) {
+            @content;
+        }        
+    }
+
+    @else if $point ==xxxxl { // 2560px
+        @media (min-width: 160rem) {
+            @content;
+        }
+    }
+}
+
+// Usage example
+// @include breakpoint(lg) {}
+
+
+////////////////////////////////////////////////////
+// IMAGES
+////////////////////////////////////////////////////
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+////////////////////////////////////////////////////
+// TYPOGRAPHY
+////////////////////////////////////////////////////
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--baseFontFamily);
+}
+
+a {
+    color: inherit;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    line-height: 1;
+
+    @include breakpoint(lg) { 
+        font-size: 2.5rem;
+    }
+
+    @include breakpoint(xxl) { 
+        font-size: 3rem;
+    }
+}
+
+h3, h4, h5, h6 {
+    font-size: 1.75rem;
+    line-height: 1;
+
+    @include breakpoint(lg) { 
+        font-size: 1.5rem;
+    }
+
+    @include breakpoint(xl) { 
+        font-size: 2.5rem;
+    }
+}
+
+ol, ul, li, p {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+
+    @include breakpoint(lg) { 
+        font-size: 1.125rem;
+    }
+    
+}
+
+
+
+
+// For form labels and such
+.label {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+
+
+
+p.error,
+#mc_embed_signup div.mce_inline_error {
+    color: var(--red)!important;
+    font-weight: 700!important;
+    margin: 0 0 1em 0!important;
+    padding: .5rem 0!important;
+    background-color: transparent!important;
+}
+
+#mc_embed_signup input.mce_inline_error {
+    border-color: var(--red)!important;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+//[id] {
+//    scroll-margin-top: 6rem;
+//}
+
+// Reduced motion preferences
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

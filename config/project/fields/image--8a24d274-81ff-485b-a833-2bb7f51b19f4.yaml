@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: image
+instructions: null
+name: Image
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:caec2669-e4fb-47d1-b280-d69f8e0f0eaa' # Images
+  defaultUploadLocationSubpath: '{% if object.owner is defined and object.owner.section is defined %}   {{ object.owner.section.handle|kebab }} {% else %}   default-folder {% endif %}'
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:caec2669-e4fb-47d1-b280-d69f8e0f0eaa' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: 'Voeg afbeelding toe'
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

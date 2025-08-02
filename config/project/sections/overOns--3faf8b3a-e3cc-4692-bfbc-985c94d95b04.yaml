@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 5a14c6ff-d917-4f5d-915e-c506b6d6a0b9 # Over ons
+handle: overOns
+maxAuthors: 1
+name: 'Over Ons'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  7fd54027-fd83-4ca4-ac47-7ee712e38c14: # Stop de asielwetten
+    enabledByDefault: true
+    hasUrls: true
+    template: over-ons/index.twig
+    uriFormat: over-ons
+type: single

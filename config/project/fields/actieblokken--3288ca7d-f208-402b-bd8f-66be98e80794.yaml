@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: actieblokken
+instructions: null
+name: Actieblokken
+searchable: false
+settings:
+  createButtonLabel: 'Nieuw blok'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - cd097818-5357-4ae3-8c53-200e0cfa5b51 # Matrix Meedoen Acties
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

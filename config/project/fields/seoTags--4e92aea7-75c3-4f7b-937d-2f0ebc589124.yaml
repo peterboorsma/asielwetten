@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: seoTags
+instructions: null
+name: 'SEO Tags'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Voeg tag toe'
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: false
+  source: 'taggroup:13a5845c-6563-46a1-a757-6aa9fa6bccc1' # SEO tags
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Tags

@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: partner
+instructions: null
+name: Bondgenoten
+searchable: false
+settings:
+  createButtonLabel: 'Voeg bondgenoot toe'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 1fa88f84-9a34-4eb8-99c9-7f22eb262d28 # Matrix Partnerlinks
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

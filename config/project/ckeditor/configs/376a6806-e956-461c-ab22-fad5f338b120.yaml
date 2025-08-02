@@ -1,0 +1,10 @@
+headingLevels:
+  - 3
+name: Simple
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - link
+  - bulletedList
+  - numberedList

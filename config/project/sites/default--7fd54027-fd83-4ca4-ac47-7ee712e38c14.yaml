@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: nl
+name: 'Stop de asielwetten'
+primary: true
+siteGroup: 4a9f7cf2-d218-47f5-95ff-2d0cc5352f63 # Stop de asielwetten
+sortOrder: 1

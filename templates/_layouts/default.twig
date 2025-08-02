@@ -1,0 +1,87 @@
+{% set global = craft.entries.section('global').one() %}
+{% set flashes = craft.app.session.getAllFlashes(true) %}
+
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+
+<head>
+    <!--
+        .+%@#.                       -++-                   
+       +@@@@@+  .                  =@@@@@-                  
+      -@@@@@@@@@@@@@%*=.          =@@@@@@-                  
+      #@@@@@@@@@@@@@@@@@%+.       @@@@@@@-                  
+    -%@@@@@@@@@@@@@@@@@@@@@*      @@@@@@@-                  
+  :%@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@-                  
+ =@@@@@@@@@@@%+*#@@@@@@@@@@@@@-   @@@@@@@:                  
+.@@@@@@@@@@@@*    .=%@@@@@@@@@@:  @@@@@@@:                  
+ %@@@@@@@@@@@#       -@@@@@@@@@*  @@@@@@@:                  
+ .*@%**@@@@@@%         #@@@@@@@@  @@@@@@@:                  
+      +@@@@@@@          #@@@@@@@:.@@@@@@@:                  
+      +@@@@@@@:          @@@@@@@..@@@@@@@: :=+****+-.       
+      =@@@@@@@#          #@@@@@@ .@@@@@@@%@@@@@@@@@@@%+.    
+      =@@@@@@@@-         %@@@@@+ .@@@@@@@@@@@@@@@@@@@@@@+   
+      =@@@@@@@@@+      .#@@@@@@. .@@@@@@@@@@@@@@@@@@@@@@@#  
+      =@@@@@@@@@@@%***%@@@@@@%.  .@@@@@@@@@%#%@@@@@@@@@@@@# 
+      =@@@@@@@@@@@@@@@@@@@@@*    :@@@@@@@@:    .-#@@@@@@@@@-
+      =@@@@@@@@@@@@@@@@@@@#:     :@@@@@@@*        -@@@@@@@@+
+      -@@@@@@@@@@@@@@@@@*:       :@@@@@@@=         -@@@@@@@*
+      -@@@@@@@#@@@@%#+:          :@@@@@@@-          %@@@@@@+
+      -@@@@@@%                   :@@@@@@@:          #@@@@@@:
+      -@@@@@@%                 .+#@@@@@@@.          @@@@@@# 
+      -@@@@@@%                +@@@@@@@@@@.         *@@@@@@. 
+      -@@@@@@%              .%@@@@@@@@@@@        -%@@@@@@:  
+      -@@@@@@%              %@@@@@@@@@@@@+=--=+#@@@@@@@%.   
+      :@@@@@@%              %@@@@@@@@@@@@@@@@@@@@@@@@@+     
+      :@@@@@@@               *@@@@@@@@@@@@@@@@@@@@@@*.      
+      :@@@@@@%                .*@@@@@@@@@@@@@@@@@%+.        
+      :@@@@@@*                   +@@@@@@@@@@@#*=.           
+      .@@@@@*                    -@@@@@#...                 
+       =##+:                     .#@@#=                     
+                                                .::--==++-  
+                              ..:--==++*##%%@@@@@@@@@@@@@@. 
+            ..::-==++**#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%  
+         =%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%.  
+        #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%##*++:    
+       -@@@@@@@@@@@@@@@@@@@@@@%%##**+==--::..               
+       :@@@@%%##**++=--::..                                 
+
+                                
+https://peterboorsma.nl
+-->
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="360" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/img/icons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/icons/android-chrome-512x512.png">
+    <meta name="msapplication-TileImage" content="/assets/img/icons/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#000000">
+
+
+    <link rel="stylesheet" href="/assets/css/app.css">
+    {% block styles %}{% endblock %}
+</head>
+
+<body class="{{ entry is defined and entry.uri == '__home__' ? 'homepage' : '' }} {% block bodyclass %}{% endblock %}">
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+
+    {% include "_partials/nav/_mainnav" %}
+
+    {% block content %}{% endblock %}
+
+    <script defer src="/assets/js/app.js" type="module"></script>
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+{% extends "_layouts/default" %}
+
+{% block styles %}
+{% endblock %}
+
+{% block bodyclass %}yellow bg-green listing{% endblock %}
+
+{% block content %}
+
+<main id="main" class="main" tabindex="-1">
+    {% set nieuws = craft.entries()
+        .section('nieuws')
+        .all() %}
+    
+    <section class="section">
+        <div class="section__header">
+            <div class="content">
+                <div class="contentblock">
+                    <header class="contentblock__header">
+                        <h2 class="pagetitle">Nieuws & acties</h2>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <div class="section__content">
+            <div class="content">
+                <div class="contentblock">
+                    {% if nieuws %}
+                        <div class="newslist">
+                        {% for entry in nieuws %}
+                            <a class="newslist__item" href="{{ entry.url }}">
+                                <div class="newslist__item__text">
+                                    <h3 class="title">{{ entry.title }}</h3>
+                                    <h3 class="pretitle">{{ entry.preTitle }}</h3>
+                                    <p>{{ entry.richText|striptags|truncate(155) }}</p>
+                                    <div class="btn btn--secondary btn--diap-green">→ Lees meer</div>
+                                </div>
+        
+                                <div class="newslist__item__image">
+                                    {% if entry.image.one() %}
+                                    {% set img = entry.image.one() %}
+                                    <figure class="figure">
+                                        <picture>
+                                            <img src="{{ img.url }}" alt="{{ img.title|raw }}" loading="lazy" />
+                                        </picture>
+        
+                                        {#<figcaption>{{ img.title|raw }}</figcaption>#}
+                                    </figure>
+                                    {% endif %}
+                                </div>
+                            </a>
+                        {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include "_partials/nav/_sociallinks.twig" %}
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

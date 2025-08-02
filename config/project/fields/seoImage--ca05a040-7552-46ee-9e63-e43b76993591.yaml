@@ -1,0 +1,38 @@
+columnSuffix: null
+handle: seoImage
+instructions: null
+name: 'SEO Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:caec2669-e4fb-47d1-b280-d69f8e0f0eaa' # Images
+  defaultUploadLocationSubpath: '{% if object.owner is defined and object.owner.section is defined %}   {{ object.owner.section.handle|kebab }} {% else %}   default-folder {% endif %}'
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:caec2669-e4fb-47d1-b280-d69f8e0f0eaa' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:caec2669-e4fb-47d1-b280-d69f8e0f0eaa' # Images
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

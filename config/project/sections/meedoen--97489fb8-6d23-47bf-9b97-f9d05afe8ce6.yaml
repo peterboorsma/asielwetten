@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 03454957-74aa-41de-9070-a96fcc4ec80d # Meedoen
+handle: meedoen
+maxAuthors: 1
+name: Meedoen
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7fd54027-fd83-4ca4-ac47-7ee712e38c14: # Stop de asielwetten
+    enabledByDefault: true
+    hasUrls: true
+    template: meedoen/index.twig
+    uriFormat: meedoen
+type: single

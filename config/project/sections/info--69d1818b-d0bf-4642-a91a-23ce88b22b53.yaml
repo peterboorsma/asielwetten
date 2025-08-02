@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 6d549cf1-0c63-4d1c-8285-fb98570d215e # Info
+handle: info
+maxAuthors: 1
+name: Info
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  7fd54027-fd83-4ca4-ac47-7ee712e38c14: # Stop de asielwetten
+    enabledByDefault: true
+    hasUrls: true
+    template: info/index.twig
+    uriFormat: info
+type: single

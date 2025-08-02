@@ -1,0 +1,49 @@
+{% extends "_layouts/default" %}
+
+{% block styles %}
+{% endblock %}
+
+{% block bodyclass %}yellow bg-green entry{% endblock %}
+
+{% block content %}
+
+<main id="main" class="main" tabindex="-1">
+    <article class="article">
+        <div class="article__header">
+            <div class="content sectionheader">
+                <div class="contentblock">
+                    <header class="contentblock__header">
+                        <h2 class="pagetitle">{{ entry.title }}</h2>
+                        {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
+                    </header>
+
+                    <div class="contentblock__text">
+                        {% if entry.intro %}{{ entry.intro }}{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article__content">
+            <div class="content">
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        {{ entry.body }}
+                    </div>
+                </div>
+
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        {% include "_partials/_list_bondgenoten.twig" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+{% include "_partials/nav/_sociallinks.twig" %}
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

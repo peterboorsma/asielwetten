@@ -1,0 +1,144 @@
+body {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body.green {
+    color: var(--green);
+}
+body.yellow {
+    color: var(--yellow);
+}
+body.red {
+    color: var(--red);
+}
+
+body.bg-green {
+    background-color: var(--green);
+}
+body.bg-yellow {
+    background-color: var(--yellow);
+}
+
+body.bg-red {
+    background-color: var(--red);
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+time {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+
+.pagetitle {
+    font-size: clamp(2rem,8vw,8rem);
+    font-weight: 800;
+}
+
+.listing .pagetitle,
+.homepage .pagetitle {
+    text-transform: uppercase;
+}
+
+.pagepretitle {
+    font-size: clamp(1.25rem,2.5vw,2.5rem);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.title {
+    font-size: clamp(1.25rem,4vw,4rem);
+    margin-bottom: 1.5rem;
+}
+
+.pretitle {
+    font-size: clamp(1.25rem,2.5vw,2.5rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.sectionheader .contentblock__text p,
+.sectionheader .contentblock__text li {
+    font-size: clamp(1.25rem,4vw,4rem);
+}
+
+.article__content .contentblock__text p,
+.article__content .contentblock__text li {
+    font-size: 1.25rem;
+
+    @include breakpoint(xl) {
+        font-size: 1.5rem;
+    }
+}
+
+.article .contentblock__text li:not(:last-child),
+.article .contentblock__text p:not(:last-child) {
+    margin-bottom:  1.5rem;
+}
+
+.article .contentblock__text ul,
+.article .contentblock__text ol {
+    margin-bottom:  1.5rem;
+}
+
+.article .contentblock__text h3,
+.article .contentblock__text h4 {
+    font-weight: 700;
+    margin-block: 1.5rem;
+}
+
+.contentblock__header__icon {
+    width: 3rem;
+
+    @include breakpoint(xl) { // 1280px
+        width: 6rem;
+    }
+}
+
+.section--nieuws  {
+    color: var(--green)
+}
+
+a.sociallinks__link {
+    aspect-ratio: 1 / 1;
+    background-color: var(--green);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.homepage .section--nieuws .contentblock__header .pagetitle {
+    margin-block-end: 4rem;
+}
+
+
+
+a.newslist__item {
+    text-decoration: none;
+
+    .btn {
+        margin-block-start: 1.5rem;
+    }
+}
+
+.newslist__item__text p {
+    font-size: 1.25rem;
+
+    @include breakpoint(xl) {
+        font-size: 1.5rem;
+    }
+}
+
+.sociallinks h3 {
+    font-size: clamp(1.25rem,3vw,3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+}

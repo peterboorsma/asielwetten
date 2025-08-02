@@ -1,0 +1,75 @@
+dateModified: 1754131798
+email:
+  fromEmail: peter@peterboorsma.nl
+  fromName: 'Stop de asielwetten'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  localStorage:
+    hasUrls: true
+    name: 'Local Storage'
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: $ASSETS_URL
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    1fa88f84-9a34-4eb8-99c9-7f22eb262d28: 'Matrix Partnerlinks' # Matrix Partnerlinks
+    3faf8b3a-e3cc-4692-bfbc-985c94d95b04: 'Over Ons' # Over Ons
+    4a9f7cf2-d218-47f5-95ff-2d0cc5352f63: 'Stop de asielwetten' # Stop de asielwetten
+    4cf40a11-c76e-44eb-80f8-c4aa33a60e3a: Partnerlink # Partnerlink
+    4e92aea7-75c3-4f7b-937d-2f0ebc589124: 'SEO Tags' # SEO Tags
+    5a14c6ff-d917-4f5d-915e-c506b6d6a0b9: 'Over ons' # Over ons
+    5ba261b3-a313-4b96-80b3-35fc63d8dca9: 'Entry Link' # Entry Link
+    6d549cf1-0c63-4d1c-8285-fb98570d215e: Info # Info
+    6de77bb9-77e8-4651-9742-44340ad51e4c: Embeds # Embeds
+    7a2b019e-db5b-4d0b-b9bd-e69504df603f: Embed # Embed
+    7fd54027-fd83-4ca4-ac47-7ee712e38c14: 'Stop de asielwetten' # Stop de asielwetten
+    8a24d274-81ff-485b-a833-2bb7f51b19f4: Image # Image
+    13a5845c-6563-46a1-a757-6aa9fa6bccc1: 'SEO tags' # SEO tags
+    17b994ad-10c2-454d-b160-9332d3c9c7c9: 'Plain Text Single Line' # Plain Text Single Line
+    27b18ae2-32be-4e31-a284-73c8bda22e83: Nieuws # Nieuws
+    69d1818b-d0bf-4642-a91a-23ce88b22b53: Info # Info
+    376a6806-e956-461c-ab22-fad5f338b120: Simple # Simple
+    1541c9cc-8eac-456a-9dc1-fc556741c310: 'Social media link' # Social media link
+    3288ca7d-f208-402b-bd8f-66be98e80794: Actieblokken # Actieblokken
+    04365d94-514d-42e9-a6a7-020827330159: 'Blijf op de hoogte' # Blijf op de hoogte
+    97489fb8-6d23-47bf-9b97-f9d05afe8ce6: Meedoen # Meedoen
+    03454957-74aa-41de-9070-a96fcc4ec80d: Meedoen # Meedoen
+    12850798-946a-4531-a231-f9e868cf34e8: 'SEO Title' # SEO Title
+    a06c8b6d-cf2f-4cd1-98b5-5742625165b7: Homepage # Homepage
+    a65636b4-b42f-420a-8621-6c852925574b: Bondgenoten # Bondgenoten
+    b7044dc0-9cff-407c-84dc-5b09094eac1e: Homepage # Homepage
+    be1bb913-a0b1-424b-8a5e-ac14789cd99a: Nieuws # Nieuws
+    c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe: 'Rich text' # Rich text
+    c4272228-e1b4-42b6-92df-560e599e3ba0: 'SEO Description' # SEO Description
+    ca05a040-7552-46ee-9e63-e43b76993591: 'SEO Image' # SEO Image
+    caec2669-e4fb-47d1-b280-d69f8e0f0eaa: Images # Images
+    cd097818-5357-4ae3-8c53-200e0cfa5b51: 'Matrix Meedoen Acties' # Matrix Meedoen Acties
+    d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5: 'Plain Text Multiline' # Plain Text Multiline
+    f13add3f-9028-4bde-8aac-5b72ab5f0bd1: Partnerlogos # Partnerlogos
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Stop de asielwetten'
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

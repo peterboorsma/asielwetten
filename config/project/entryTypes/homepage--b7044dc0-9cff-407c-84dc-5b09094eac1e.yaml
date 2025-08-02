@@ -1,0 +1,298 @@
+color: null
+description: null
+fieldLayouts:
+  3216d49e-edf5-43d7-bfe4-9274bc41a3b8:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-07-28T19:24:47+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: 'Sectie titel'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: bc69b386-7fcc-4520-890f-ba3521f78db9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T19:27:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: headerText
+            includeInCards: false
+            instructions: null
+            label: 'Sectie tekst'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0dff150-b710-47f4-8d4b-a304e2566289
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T19:43:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 17b994ad-10c2-454d-b160-9332d3c9c7c9 # Plain Text Single Line
+            handle: headerButtonText
+            includeInCards: false
+            instructions: null
+            label: 'Sectie tekst op knop'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d5c83fd-41b4-475c-ab1a-3d8eefb3f40b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-07-28T19:43:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5ba261b3-a313-4b96-80b3-35fc63d8dca9 # Entry Link
+            handle: headerButtonLink
+            includeInCards: false
+            instructions: null
+            label: 'Sectie link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 219c2af5-1c0f-410d-98a8-df05d8b2f183
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Header sectie'
+        uid: cda5a2ca-04d4-4d82-a446-925b9188f1c0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-28T19:55:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7a2b019e-db5b-4d0b-b9bd-e69504df603f # Embed
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5038e1a9-59a3-4941-844b-b8f9f560c71e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-08-01T09:23:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5 # Plain Text Multiline
+            handle: videoText
+            includeInCards: false
+            instructions: "Plak hier de uitgeschreven tekst zoals die in de video wordt gesproken.\r\nZo kunnen mensen met een visuele beperking de video voorgelezen krijgen."
+            label: 'Video script tekst'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3053ac56-4bb5-4649-bb1d-139e0b5b15e9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Video
+        uid: 1c3c2f59-dc4c-46b6-afa2-97268fe7f1a3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-28T19:43:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 17b994ad-10c2-454d-b160-9332d3c9c7c9 # Plain Text Single Line
+            handle: spreekjeuitTitle
+            includeInCards: false
+            instructions: null
+            label: 'Sectie titel'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e852cb22-ff6b-4a58-a9e4-fd322f53b08e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T19:43:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: spreekjeuitText
+            includeInCards: false
+            instructions: null
+            label: 'Sectie tekst'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73f00805-7e89-4a5a-af61-793df838daa5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-28T19:43:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5 # Plain Text Multiline
+            handle: spreekjeuitButtonText
+            includeInCards: false
+            instructions: null
+            label: 'Sectie tekst op knop'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cdd32e88-ee2e-4e5f-9caa-b66faadf4ed0
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-07-28T19:43:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5ba261b3-a313-4b96-80b3-35fc63d8dca9 # Entry Link
+            handle: spreekjeuitButtonLink
+            includeInCards: false
+            instructions: null
+            label: 'Sectie link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f14070be-4f5f-46b2-804e-6723bbeb8780
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Spreek je uit sectie'
+        uid: 718e5aef-4e23-4c84-93d6-7ec27be64212
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-28T19:27:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 12850798-946a-4531-a231-f9e868cf34e8 # SEO Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9eeec6ea-5809-4f2e-a993-60e4f6a225b6
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-07-28T19:27:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4272228-e1b4-42b6-92df-560e599e3ba0 # SEO Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d52a8510-c7a0-4136-a9b1-a78a719731c8
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-07-28T19:48:37+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 3b742842-91f0-446e-95c9-623293622b8e
+            userCondition: null
+          -
+            dateAdded: '2025-07-28T19:27:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4e92aea7-75c3-4f7b-937d-2f0ebc589124 # SEO Tags
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95db673f-ec91-4106-8425-8434129c9a42
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-07-28T19:27:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ca05a040-7552-46ee-9e63-e43b76993591 # SEO Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69c84bcc-b2d1-4cc7-9a22-de2b6c492d0e
+            userCondition: null
+            warning: null
+            width: 25
+        name: SEO
+        uid: 598f3905-919a-4008-944f-0515d90f9c6e
+        userCondition: null
+handle: homepage
+hasTitleField: true
+icon: house
+name: Homepage
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

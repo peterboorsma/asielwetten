@@ -1,0 +1,13 @@
+
+{% if entry.matrixPartnerlinks.length %}
+    {% set partners = entry.partners %}
+
+
+<ul>
+    {% for partner in partners %}
+        <li>
+            <a href="{{ partner.partnerlink }}" rel="nofollow noopener" target="_blank">{{ partner.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endif %}

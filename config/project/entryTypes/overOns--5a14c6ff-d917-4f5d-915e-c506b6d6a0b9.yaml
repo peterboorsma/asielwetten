@@ -1,0 +1,190 @@
+color: null
+description: null
+fieldLayouts:
+  bef5706a-7052-4995-9dc5-eeb85e245242:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-07-28T20:06:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 19b7b3f6-0085-45a1-adac-a45f852d91f6
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-07-28T20:10:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Intro
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7627b7ba-b7ed-4174-a403-2d50310d051d
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-07-28T20:10:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: body
+            includeInCards: false
+            instructions: null
+            label: Contact
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f26e464-722c-4a1b-8505-98b5b64c8e79
+            userCondition: null
+            warning: null
+            width: 75
+        name: Content
+        uid: 7ca25f48-1d6e-4c96-8222-aaf09f5ac4d0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-28T20:10:27+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a65636b4-b42f-420a-8621-6c852925574b # Bondgenoten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Bondgenoten
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9460589f-a7f6-449c-b793-b300d3bc096e
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Bondgenoten lijst'
+        uid: 02cfc9fb-1bae-4ab9-bb02-81bc12b6e75f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-28T20:13:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 12850798-946a-4531-a231-f9e868cf34e8 # SEO Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd85e823-976d-4926-9fef-5e769bcb8c77
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-07-28T20:13:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c4272228-e1b4-42b6-92df-560e599e3ba0 # SEO Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0a6e6b8-055e-482e-884b-846884b51e07
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-07-28T20:13:55+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 83b7c36e-253b-4f42-9da6-022b02eb74bd
+            userCondition: null
+          -
+            dateAdded: '2025-07-28T20:13:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ca05a040-7552-46ee-9e63-e43b76993591 # SEO Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 595bd490-9d3c-4185-8196-672b6f9e5cc3
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-07-28T20:13:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4e92aea7-75c3-4f7b-937d-2f0ebc589124 # SEO Tags
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91cae144-8a6f-40a6-b52c-5bf70256c1f0
+            userCondition: null
+            warning: null
+            width: 25
+        name: SEO
+        uid: 6957e820-b096-4028-af33-e471272ab0a9
+        userCondition: null
+handle: overOns
+hasTitleField: true
+icon: eyes
+name: 'Over ons'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,62 @@
+{% set currentPath = craft.app.request.pathInfo %}
+{% set element = (category ?? entry ?? null) %}
+{% set currentSite = element ? element.site : craft.app.sites.currentSite %}
+
+<header class="nav">
+    <div class="nav__header">
+        <h1 class="sitename">
+            <a href="{{ currentSite.baseUrl }}" aria-label="{{ 'Homepage'|t }}">
+                Stop de asielwetten
+            </a>
+        </h1>
+
+        <div class="navoptions" id="navOptionsFx">
+            <button class="hamburger hamburger--morph" 
+                    id="toggleNavBtn" 
+                    aria-expanded="false"
+                    data-label-open="Open hoofdnavigatie" 
+                    data-label-close="Sluit hoofdnavigatie"
+                    aria-label="Open hoofdnavigatie">
+                <span class="hamburger__box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="nav__navitems nav__navitems--closed" id="navElement">
+        <nav class="mainnav">
+            <ul class="nav__items">
+                <li>
+                    <a href="{{ currentSite.baseUrl }}" class="nav__item {% if currentPath == '' %}nav__item--active{% endif %}">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ currentSite.baseUrl ~ '/meedoen' }}" class="nav__item {% if currentPath == 'meedoen' %}nav__item--active{% endif %}">
+                        Doe mee!
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ currentSite.baseUrl ~ '/info' }}" class="nav__item {% if currentPath == 'info' %}nav__item--active{% endif %}">
+                        Over de asielwetten
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ currentSite.baseUrl ~ '/nieuws' }}" class="nav__item {% if currentPath == 'nieuws' %}nav__item--active{% endif %}">
+                        Nieuws & acties
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ currentSite.baseUrl ~ '/over-ons' }}" class="nav__item {% if currentPath == 'over-ons' %}nav__item--active{% endif %}">
+                        Over ons
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

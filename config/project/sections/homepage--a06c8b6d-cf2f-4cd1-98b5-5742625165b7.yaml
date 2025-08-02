@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: b7044dc0-9cff-407c-84dc-5b09094eac1e # Homepage
+handle: homepage
+maxAuthors: 1
+name: Homepage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  7fd54027-fd83-4ca4-ac47-7ee712e38c14: # Stop de asielwetten
+    enabledByDefault: true
+    hasUrls: true
+    template: homepage/index.twig
+    uriFormat: __home__
+type: single

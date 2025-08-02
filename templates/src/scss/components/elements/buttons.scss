@@ -1,0 +1,182 @@
+////////////////////////////////////////////////////
+// BUTTONS 
+////////////////////////////////////////////////////
+.btn {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    line-height: 1;
+
+    &--primary {
+        border-radius: 1rem;
+        padding: .75rem 1rem;
+        font-size: clamp(1.25rem,3vw,3rem);
+        font-weight: 700;
+        text-transform: uppercase;
+        border-style: solid;
+        border-width: .125rem;
+        transition: all 0.3s ease-out;
+
+        @include breakpoint(xl) { // 1280px
+            border-radius: 2rem;
+            border-width: .25rem;
+            padding: 1rem 2rem;
+        }
+    }
+
+    &--secondary {
+        border-radius: 1rem;
+        padding: .25rem .75rem;
+        font-size: 1.25;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-style: solid;
+        border-width: .125rem;
+        transition: all 0.3s ease-out;
+
+        @include breakpoint(xl) { // 1280px
+            border-radius: 2rem;
+            border-width: .25rem;
+            padding: .125rem .75rem;
+        }
+    }
+
+    &--green {
+        color: var(--green);
+        background-color: var(--yellow);
+        border-color: var(--green);
+    }
+
+    &--diap-green {
+        color: var(--yellow);
+        background-color: var(--green);
+        border-color: var(--green);
+    }
+
+    &--red {
+        color: var(--red);
+        background-color: var(--yellow);
+        border-color: var(--yellow);
+    }
+
+}
+
+////////////////////////////////////////////////////
+// EFFECTS
+////////////////////////////////////////////////////
+a.btn {
+    text-decoration: none;
+
+    &--greenFx {
+        background: linear-gradient(
+                to right,
+                var(--green) 50%,
+                var(--yellow) 50%
+            );
+        background-size: 200% 100%;
+        background-position: right bottom;
+
+        &:hover {
+            color: var(--yellow);
+            background-position: left bottom;
+        }
+    }
+
+        &--redFx {
+        background: linear-gradient(
+                to right,
+                var(--red) 50%,
+                var(--yellow) 50%
+            );
+        background-size: 200% 100%;
+        background-position: right bottom;
+
+        &:hover {
+            color: var(--yellow);
+            background-position: left bottom;
+        }
+    }
+
+}
+
+
+
+////////////////////////////////////////////////////
+// ICONS
+////////////////////////////////////////////////////
+
+
+.btn--back::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .5rem;
+    transition: filter 0.2s ease-out;
+}
+
+.btn--default.btn--back::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 126.89 105.26'%3E%3Cpath fill='%23000' d='m126.89 46.22-116.13-.11c15.56 0 47.71-14.53 47.71-46.11H44.51C44.62 36.73 15.33 46.11 0 46.11l.12 12.93c15.1 0 44.39 9.38 44.39 46.22h13.96c0-31.58-32.04-46.23-47.83-46.23h116.25V46.22Z'/%3E%3C/svg%3E");
+}
+
+.btn--diap.btn--back::before  {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 126.89 105.26'%3E%3Cpath fill='%23fff' d='m126.89 46.22-116.13-.11c15.56 0 47.71-14.53 47.71-46.11H44.51C44.62 36.73 15.33 46.11 0 46.11l.12 12.93c15.1 0 44.39 9.38 44.39 46.22h13.96c0-31.58-32.04-46.23-47.83-46.23h116.25V46.22Z'/%3E%3C/svg%3E");
+}
+
+// ICONS:HOVER
+:hover.btn--outlink::after {
+    filter: invert(100%);
+    //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M15.7 9.87 25.57 0c26.05 26.05 53.4 11.97 64.08 1.29l9.22 9.06C88.03 21.19 73.95 48.54 100 74.43l-9.87 9.87c-22.33-22.33-9.87-55.34 1.13-66.34L9.06 100 0 90.94l82.2-82.2C71.03 19.91 38.03 32.2 15.7 9.87Z'/%3E%3C/svg%3E");
+}
+
+:hover.btn--default.btn--back::before {
+    filter: invert(100%);
+    //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 126.89 105.26'%3E%3Cpath fill='%23fff' d='m126.89 46.22-116.13-.11c15.56 0 47.71-14.53 47.71-46.11H44.51C44.62 36.73 15.33 46.11 0 46.11l.12 12.93c15.1 0 44.39 9.38 44.39 46.22h13.96c0-31.58-32.04-46.23-47.83-46.23h116.25V46.22Z'/%3E%3C/svg%3E");
+}
+
+:hover.btn--diap.btn--back::before {
+    filter: invert(100%);
+    //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 126.89 105.26'%3E%3Cpath fill='%23000' d='m126.89 46.22-116.13-.11c15.56 0 47.71-14.53 47.71-46.11H44.51C44.62 36.73 15.33 46.11 0 46.11l.12 12.93c15.1 0 44.39 9.38 44.39 46.22h13.96c0-31.58-32.04-46.23-47.83-46.23h116.25V46.22Z'/%3E%3C/svg%3E");
+}
+
+////////////////////////////////////////////////////
+// PREVIOUS AND NEXT BUTTONS
+// These buttons are in diapositive variant only
+////////////////////////////////////////////////////
+
+.btn--prev,
+.btn--next {
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 3rem;
+    height: 3rem;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: background-position 0.15s ease-out;
+}
+
+.btn--prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 126.89 105.26'%3E%3Cpath fill='%23fff' d='m126.89 46.22-116.13-.11c15.56 0 47.71-14.53 47.71-46.11H44.51C44.62 36.73 15.33 46.11 0 46.11l.12 12.93c15.1 0 44.39 9.38 44.39 46.22h13.96c0-31.58-32.04-46.23-47.83-46.23h116.25V46.22Z'/%3E%3C/svg%3E");
+
+    &:hover {
+        background-position: left .25rem center;
+    }
+
+}
+
+.btn--next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 126.89 105.26'%3E%3Cpath fill='%23fff' d='M126.78,46.22c-15.1,0-44.39-9.38-44.39-46.22h-13.96c0,31.58,32.04,46.23,47.83,46.23H0s0,12.81,0,12.81l116.13.11c-15.56,0-47.71,14.53-47.71,46.11h13.96c-.11-36.73,29.18-46.11,44.51-46.11l-.12-12.93Z'/%3E%3C/svg%3E");
+
+    &:hover {
+        background-position: right .25rem center;
+    }
+
+}
+
+
+

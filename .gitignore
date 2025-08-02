@@ -1,0 +1,47 @@
+# ----------------------------
+# Environment & system junk
+# ----------------------------
+.env
+.env.*.local
+.DS_Store
+*.log
+*.code-workspace
+/.idea
+/.vscode
+prepros.config
+
+# ----------------------------
+# Composer dependencies
+# ----------------------------
+/vendor
+
+# ----------------------------
+# Craft runtime & cache
+# ----------------------------
+/storage/*
+!/storage/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/backups/*
+!/storage/backups/.gitkeep
+
+/web/cpresources
+
+# ----------------------------
+# Project Config
+# ----------------------------
+config/license.key
+
+# ----------------------------
+# Asset volumes (if stored locally)
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# ----------------------------
+# Frontend build tools
+# ----------------------------
+/node_modules
+/web/dist/*
+!/web/dist/.gitkeep
+/dist/
+.vite/

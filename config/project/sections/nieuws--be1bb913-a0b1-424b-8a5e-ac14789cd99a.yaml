@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 27b18ae2-32be-4e31-a284-73c8bda22e83 # Nieuws
+handle: nieuws
+maxAuthors: 1
+name: Nieuws
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  7fd54027-fd83-4ca4-ac47-7ee712e38c14: # Stop de asielwetten
+    enabledByDefault: true
+    hasUrls: true
+    template: nieuws/_entry.twig
+    uriFormat: 'nieuws/{slug}'
+type: channel
