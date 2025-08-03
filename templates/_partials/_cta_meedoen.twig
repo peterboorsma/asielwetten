@@ -1,23 +1,23 @@
 {% set meedoen = craft.entries.section('meedoen').one() %}
 
-<div class="ctablock ctablock--organisaties">
+<div class="ctablock ctablock--meedoen">
     <div class="cta">
         <div class="cta__header">
-            <h3>{{ meedoen.ctaOrgTitle }}</h3>
+            <h3>{{ meedoen.ctaMeedoenTitle }}</h3>
         </div>
 
         <div class="cta__content">
             <div class="contentblock">
                 <div class="contentblock__text">
-                    {{ meedoen.ctaOrgText }}
+                    {{ meedoen.ctaMeedoenText }}
                 </div>
             </div>
         </div>
 
         <div class="cta__footer">
             <div class="btn-group">
-                    <a href="/info" class="btn btn--secondary btn--yellow">
-                        → Contact opnemen
+                    <a href="/meedoen" class="btn btn--secondary btn--yellow">
+                        → Kijk wat jij kunt doen
                     </a>
             </div>
         </div>

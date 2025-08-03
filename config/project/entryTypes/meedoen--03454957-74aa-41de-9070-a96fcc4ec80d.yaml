@@ -270,7 +270,7 @@ fieldLayouts:
             uid: e4435471-5c37-4b6d-89af-200fc031a92b
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             dateAdded: '2025-08-01T08:56:34+00:00'
             editCondition: null
@@ -287,49 +287,49 @@ fieldLayouts:
             uid: 579f9ec6-4c33-48a3-bfb6-cb751b26bfba
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+        name: 'CTA organisaties'
+        uid: ebe93c09-0b68-46a0-a525-9fa5b90f4cb9
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
-            dateAdded: '2025-08-01T08:58:12+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\LineBreak
-            uid: 9ee7dac9-6a68-485b-9f55-32e7b2804041
-            userCondition: null
-          -
-            dateAdded: '2025-08-01T08:58:12+00:00'
+            dateAdded: '2025-08-03T19:29:49+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 17b994ad-10c2-454d-b160-9332d3c9c7c9 # Plain Text Single Line
-            handle: ctaOrgButtonText
+            handle: ctaMeedoenTitle
             includeInCards: false
             instructions: null
-            label: 'Tekst op knop'
+            label: 'Blok titel'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 57cd0317-1bec-4f0d-bc47-569c0519d9b0
+            uid: 838b5d2a-8666-47a6-a2f4-4cc6625662d9
             userCondition: null
             warning: null
-            width: 25
+            width: 75
           -
-            dateAdded: '2025-08-01T08:58:12+00:00'
+            dateAdded: '2025-08-03T19:29:49+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 5ba261b3-a313-4b96-80b3-35fc63d8dca9 # Entry Link
-            handle: ctaOrgButtonLink
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: ctaMeedoenText
             includeInCards: false
             instructions: null
-            label: 'Button link'
+            label: 'Blok bodytekst'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2107a65e-da21-4bd3-bbc9-02e3b53effbf
+            uid: c3f79617-3cfd-4ff6-85a3-4ee032e71a70
             userCondition: null
             warning: null
-            width: 25
-        name: 'Blok organisaties'
-        uid: ebe93c09-0b68-46a0-a525-9fa5b90f4cb9
+            width: 75
+        name: 'CTA meedoen'
+        uid: 662130e8-d95c-4353-bcf9-6e67ffa0f098
         userCondition: null
       -
         elementCondition: null

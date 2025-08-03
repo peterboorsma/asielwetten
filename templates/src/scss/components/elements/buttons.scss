@@ -26,19 +26,19 @@
 
     &--secondary {
         border-radius: 1rem;
-        padding: .25rem .75rem;
+        padding: .375rem .75rem;
         font-size: 1.25;
         font-weight: 700;
         text-transform: uppercase;
         border-style: solid;
-        border-width: .125rem;
+        border-width: 1px;
         transition: all 0.3s ease-out;
 
-        @include breakpoint(xl) { // 1280px
-            border-radius: 2rem;
-            border-width: .25rem;
-            padding: .125rem .75rem;
-        }
+        //@include breakpoint(xl) { // 1280px
+            //border-radius: 2rem;
+            //border-width: .125rem;
+           // padding: .125rem .75rem;
+        //}
     }
 
     &--green {

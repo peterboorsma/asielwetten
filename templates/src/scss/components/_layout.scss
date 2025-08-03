@@ -215,7 +215,7 @@
 ////////////////////////////////////////////////////
 
 .sociallinks {
-    width: min(38rem,100vw - 4rem);
+    width: min(48rem,100vw - 4rem);
     margin-inline: auto;
 
     h3 {
@@ -307,15 +307,33 @@
 }
 
 ////////////////////////////////////////////////////
-// CTA Organisaties
+// CTA blokken
 ////////////////////////////////////////////////////
 
+.ctablock {
+
+    &--meedoen {
+        background-color: var(--red);
+        color: var(--yellow);
+    }
+
+    &--organisaties {
+        background-color: var(--green);
+        color: var(--yellow);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
 
 .cta {
-    width: min(38rem,100vw - 4rem);
+    width: min(48rem,100vw - 4rem);
     padding-block: 4rem;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
