@@ -33,20 +33,20 @@
         </div>
     </section>
 
+    {% set embed = craft.embeddedAssets.get(entry.embed.one()) %}
+    {% if embed %}
     <section class="section">
         <div class="content">
             <div class="contentblock">
                 <div class="contentblock__embed">
                     <figure class="media--embed">
-                        {% set embed = craft.embeddedAssets.get(entry.embed.one()) %}
-                        {% if embed %}
                             {{ embed.code }}
-                        {% endif %}
                     </figure>
                 </div>
             </div>
         </div>
     </section>
+    {% endif %}
 
     <section class="section section--actie">
         <div class="content sectionheader">
