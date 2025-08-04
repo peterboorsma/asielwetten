@@ -2,47 +2,46 @@
     .section('nieuws')
     .limit(3)
     .all() %}
-
+{% if nieuws %}
 <section class="section section--nieuws">
     <div class="content">
         <div class="contentblock">
             <header class="contentblock__header">
                 <h2 class="pagetitle">Nieuws & acties</h2>
             </header>
-        
-            {% if nieuws %}
-                <div class="newslist">
-                {% for entry in nieuws %}
-                    <a class="newslist__item" href="{{ entry.url }}">
-                        <div class="newslist__item__text">
-                            <h2 class="title">{{ entry.title }}</h2>
-                            <h3 class="pretitle">{{ entry.preTitle }}</h3>
-                            <p>{{ entry.richText|striptags|truncate(155) }}</p>
-                            <div class="btn btn--secondary btn--diap-green">→ Lees meer</div>
-                        </div>
-
-                        <div class="newslist__item__image">
-                            {% if entry.image.one() %}
-                            {% set img = entry.image.one() %}
-                            <figure class="figure">
-                                <picture>
-                                    <img src="{{ img.url }}" alt="{{ img.title|raw }}" loading="lazy" />
-                                </picture>
-
-                                {#<figcaption>{{ img.title|raw }}</figcaption>#}
-                            </figure>
-                            {% endif %}
-                        </div>
-                    </a>
-                {% endfor %}
-
-                    <div class="btn-group">
-                        <a href="{{ currentSite.baseUrl ~ '/nieuws' }}" class="btn btn--primary btn--green btn--greenFx btn--arrowRight">
-                            → Meer nieuws
-                        </a>
+          
+            <div class="newslist">
+            {% for entry in nieuws %}
+                <a class="newslist__item" href="{{ entry.url }}">
+                    <div class="newslist__item__text">
+                        <h2 class="title">{{ entry.title }}</h2>
+                        <h3 class="pretitle">{{ entry.preTitle }}</h3>
+                        <p>{{ entry.richText|striptags|truncate(155) }}</p>
+                        <div class="btn btn--secondary btn--diap-green">→ Lees meer</div>
                     </div>
+
+                    <div class="newslist__item__image">
+                        {% if entry.image.one() %}
+                        {% set img = entry.image.one() %}
+                        <figure class="figure">
+                            <picture>
+                                <img src="{{ img.url }}" alt="{{ img.title|raw }}" loading="lazy" />
+                            </picture>
+
+                            {#<figcaption>{{ img.title|raw }}</figcaption>#}
+                        </figure>
+                        {% endif %}
+                    </div>
+                </a>
+            {% endfor %}
+
+                <div class="btn-group">
+                    <a href="{{ currentSite.baseUrl ~ '/nieuws' }}" class="btn btn--primary btn--green btn--greenFx btn--arrowRight">
+                        → Meer nieuws
+                    </a>
                 </div>
-            {% endif %}
+            </div>
         </div>
     </div>
 </section>
+{% endif %}
