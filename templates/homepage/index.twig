@@ -67,16 +67,16 @@
                     {{ entry.spreekjeuitText }}
                 </div>
 
+                {% set buttonEntry = entry.spreekjeuitButtonLink.one() %}
+                {% if buttonEntry %}
                 <div class="contentblock__footer">
-                    <div class="btn-group">
-                        {% set buttonEntry = entry.spreekjeuitButtonLink.one() %}
-                        {% if buttonEntry %}
-                            <a href="{{ buttonEntry.url }}" class="btn btn--primary btn--red btn--redFx">
-                                → {{ entry.spreekjeuitButtonText }}
-                            </a>
-                        {% endif %}
+                    <div class="btn-group">                        
+                        <a href="{{ buttonEntry.url }}" class="btn btn--primary btn--red btn--redFx">
+                            → {{ entry.spreekjeuitButtonText }}
+                        </a>
                     </div>
                 </div>
+                {% endif %}
             </div>
         </div>
     </section>
