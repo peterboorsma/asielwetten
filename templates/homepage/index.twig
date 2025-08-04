@@ -34,7 +34,7 @@
     </section>
 
     {% set meedoen = craft.entries.section('meedoen').one() %}
-    {% set embed = craft.embeddedAssets.get(meedoen.embed.one()) %}
+    {% set embed = craft.embeddedAssets.get(meedoen.video.one()) %}
     {% if embed %}
     <section class="section">
         <div class="content">
