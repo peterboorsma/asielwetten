@@ -33,7 +33,8 @@
         </div>
     </section>
 
-    {% set embed = craft.embeddedAssets.get(entry.embed.one()) %}
+    {% set meedoen = craft.entries.section('meedoen').one() %}
+    {% set embed = craft.embeddedAssets.get(meedoen.embed.one()) %}
     {% if embed %}
     <section class="section">
         <div class="content">

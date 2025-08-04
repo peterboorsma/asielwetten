@@ -34,17 +34,16 @@
                     </div>
                 </div>
 
+                {% set embed = craft.embeddedAssets.get(entry.video.one()) %}
                 <div class="contentblock">
                     <div class="contentblock__cols">
                         <div class="contentblock__cols__col">
                             <h3>Video</h3>
-
+                            {% if embed %}
                             <figure class="media--embed">
-                                {% set embed = craft.embeddedAssets.get(entry.video.one()) %}
-                                {% if embed %}
-                                    {{ embed.code }}
-                                {% endif %}
+                                {{ embed.code }}
                             </figure>
+                            {% endif %}
 
                             {% if entry.videoText %}
                                 <div>{{ entry.videoText }}</div>
@@ -58,6 +57,7 @@
                             {% endif %}
                         </div>
 
+                        {% set fileToolkit = entry.fileToolkit.one() %}
                         <div class="contentblock__cols__col">
                             <h3>Toolkit</h3>
                             
@@ -65,7 +65,6 @@
                                 <div>{{ entry.toolkitText }}</div>
                             {% endif %}
 
-                            {% set fileToolkit = entry.fileToolkit.one() %}
                             {% if fileToolkit %}
                             <div class="btn-group">
                                 <a href="{{ fileToolkit.url }}" class="btn btn--secondary btn--diap-green" target="_blank">↓ Download toolkit</a>

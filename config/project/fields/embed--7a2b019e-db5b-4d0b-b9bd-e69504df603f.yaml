@@ -6,7 +6,7 @@ searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: true
+  allowUploads: false
   allowedKinds: null
   branchLimit: null
   defaultPlacement: end

@@ -95,39 +95,14 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-07-28T19:55:37+00:00'
-            editCondition: null
+            dateAdded: '2025-08-04T11:20:26+00:00'
+            dismissible: false
             elementCondition: null
-            fieldUid: 7a2b019e-db5b-4d0b-b9bd-e69504df603f # Embed
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5038e1a9-59a3-4941-844b-b8f9f560c71e
+            style: tip
+            tip: 'Video wordt in "meedoen" geregeld'
+            type: craft\fieldlayoutelements\Tip
+            uid: 44841e31-0659-40e6-be27-43e2866a3a66
             userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2025-08-04T10:59:07+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5 # Plain Text Multiline
-            handle: videoText
-            includeInCards: false
-            instructions: null
-            label: 'Plak hier het script van de video'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4cf6b4fa-96f0-4ee1-b618-65e9170185bf
-            userCondition: null
-            warning: null
-            width: 100
         name: Video
         uid: 1c3c2f59-dc4c-46b6-afa2-97268fe7f1a3
         userCondition: null
