@@ -112,19 +112,19 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2025-08-01T09:23:27+00:00'
+            dateAdded: '2025-08-04T10:59:07+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5 # Plain Text Multiline
             handle: videoText
             includeInCards: false
-            instructions: "Plak hier de uitgeschreven tekst zoals die in de video wordt gesproken.\r\nZo kunnen mensen met een visuele beperking de video voorgelezen krijgen."
-            label: 'Video script tekst'
+            instructions: null
+            label: 'Plak hier het script van de video'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3053ac56-4bb5-4649-bb1d-139e0b5b15e9
+            uid: 4cf6b4fa-96f0-4ee1-b618-65e9170185bf
             userCondition: null
             warning: null
             width: 100

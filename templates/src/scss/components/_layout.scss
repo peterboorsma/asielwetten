@@ -62,8 +62,12 @@
     }
 
     &__embed {
-        aspect-ratio: 16 / 9;
-        background-color: var(--black);
+        //aspect-ratio: 9 / 16;
+        //background-color: var(--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     &__cols {
@@ -83,7 +87,6 @@
 }
 
 .contentblock__cols__col {
-    
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -196,11 +199,12 @@
 ////////////////////////////////////////////////////
 
 .media--embed {
-    aspect-ratio: 16/9;
+    aspect-ratio: 9/16;
     width: 100%;
     height: auto;
+    max-width: 49rem;
+    max-height: 80vh;
     overflow: hidden;
-    border-radius: .35rem;
 
     iframe {
         width: 100%;

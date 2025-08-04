@@ -41,8 +41,6 @@
                         {% set embed = craft.embeddedAssets.get(entry.embed.one()) %}
                         {% if embed %}
                             {{ embed.code }}
-        
-                            {#<figcaption>{% if embed.title %}{{ embed.title }}{% endif %}</figcaption>#}
                         {% endif %}
                     </figure>
                 </div>
