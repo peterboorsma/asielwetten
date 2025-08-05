@@ -16,7 +16,7 @@
                 </header>
 
                 <div class="contentblock__text">
-                    <p>{{ entry.headerText }}</p>
+                    {{ entry.headerText }}
                 </div>
 
                 <div class="contentblock__footer">
@@ -36,7 +36,7 @@
     {% set meedoen = craft.entries.section('meedoen').one() %}
     {% set embed = craft.embeddedAssets.get(meedoen.video.one()) %}
     {% if embed %}
-    <section class="section">
+    <section class="section section--video">
         <div class="content">
             <div class="contentblock">
                 <div class="contentblock__embed">

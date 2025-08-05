@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.homepage .section--video {
+    padding-block-start: 0;
+}
+
 .homepage .section--nieuws {
     background-color: var(--yellow);
 }
