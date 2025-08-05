@@ -1,4 +1,9 @@
+{% hook 'seomateMeta' %}
+
+{#
 <link rel="canonical" href="{{ siteUrl ~ craft.app.request.pathInfo }}">
+<meta name="robots" content="index, follow">
+
     <title>{{ entry.seoTitle ?? entry.title }}</title>
     <meta name="description" content="{{ entry.seoDescription ?? entry.headerText }}">
 
@@ -10,20 +15,25 @@
 
     <meta property="og:title" content="{{ entry.seoTitle ?? entry.title }}">
     <meta property="og:description" content="{{ entry.seoDescription ?? entry.headerText }}">
-    <meta name="twitter:title" content="{{ entry.seoTitle ?? entry.title }}">
-    <meta name="twitter:description" content="{{ entry.seoDescription ?? entry.headerText }}">
 
-    {% if entry.uri == '__home__' %}
-        <meta name="robots" content="noindex, follow">
-    {% else %}
-        <meta name="robots" content="index, follow">
-    {% endif %}
-{% else %}
-    <title>Default Title</title>
-    <meta name="description" content="Default description">
-    <meta name="robots" content="index, follow">
-{% endif %}
 
-{# Additional SEO tags can be added here #}
-<meta name="author" content="Your Name">
-<meta name="keywords" content="{{ entry.keywords ?? 'default, keywords' }}">
+
+
+
+
+
+
+
+
+{% set tags = entry.seoTags.all() %}
+        {% if tags|length %}
+            <ul class="tags">
+                {% for tag in tags %}
+                    <li>{{ tag.title }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <meta name="keywords" content="{{ entry.seoTags ?? 'default, keywords' }}">
+
+        #}
