@@ -58,19 +58,19 @@
                         </div>
 
                         {% set fileToolkit = entry.fileToolkit.one() %}
+                        {% if fileToolkit %}
                         <div class="contentblock__cols__col">
                             <h3>Toolkit</h3>
                             
                             {% if entry.toolkitText %}
                                 <div>{{ entry.toolkitText }}</div>
                             {% endif %}
-
-                            {% if fileToolkit %}
+                            
                             <div class="btn-group">
                                 <a href="{{ fileToolkit.url }}" class="btn btn--secondary btn--diap-green" target="_blank">↓ Download toolkit</a>
                             </div>
-                            {% endif %}
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
