@@ -356,3 +356,11 @@
     gap: 2rem;
 }
 
+////////////////////////////////////////////////////
+// Sitefooter
+////////////////////////////////////////////////////
+.footer {
+        width: min(48rem,100vw - 4rem);
+        margin-inline: auto;
+        padding-block-end: 2rem;
+}
