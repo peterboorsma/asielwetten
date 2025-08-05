@@ -28,12 +28,6 @@
 
         <div class="article__content">
             <div class="content">
-                <div class="contentblock">
-                    <div class="contentblock__text">
-                        {{ entry.body }}
-                    </div>
-                </div>
-
                 {% set embed = craft.embeddedAssets.get(entry.video.one()) %}
                 <div class="contentblock">
                     <div class="contentblock__cols">
@@ -71,6 +65,12 @@
                             </div>
                         </div>
                         {% endif %}
+                    </div>
+                </div>
+
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        {{ entry.body }}
                     </div>
                 </div>
             </div>
