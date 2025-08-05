@@ -30,13 +30,13 @@
             <div class="content">
                 <div class="contentblock">
                     <div class="contentblock__text">
-                        {{ entry.body }}
+                        {% include "_partials/_list_bondgenoten.twig" %}
                     </div>
                 </div>
 
                 <div class="contentblock">
                     <div class="contentblock__text">
-                        {% include "_partials/_list_bondgenoten.twig" %}
+                        {{ entry.body }}
                     </div>
                 </div>
             </div>
