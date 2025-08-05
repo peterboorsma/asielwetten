@@ -1,4 +1,4 @@
-dateModified: 1754389292
+dateModified: 1754390741
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -69,7 +69,7 @@ plugins:
     schemaVersion: 1.0.0
 system:
   edition: solo
-  live: false
+  live: true
   name: 'Stop de asielwetten'
   retryDuration: null
   schemaVersion: 5.8.0.3
