@@ -46,9 +46,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-block-end: 2rem;
 
     @include breakpoint(xl) { // 1280px
         gap: 4rem;
+        margin-block-end: 4rem;
     }
 
     &__header {
