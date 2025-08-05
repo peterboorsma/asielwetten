@@ -128,6 +128,13 @@ figure {
     white-space: nowrap;
 }
 
+.hidden-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
 //[id] {
 //    scroll-margin-top: 6rem;
 //}

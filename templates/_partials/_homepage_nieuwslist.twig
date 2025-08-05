@@ -14,8 +14,8 @@
             {% for entry in nieuws %}
                 <a class="newslist__item" href="{{ entry.url }}">
                     <div class="newslist__item__text">
-                        <h2 class="title">{{ entry.title }}</h2>
-                        <h3 class="pretitle">{{ entry.preTitle }}</h3>
+                        <h3 class="title">{{ entry.title }}</h3>
+                        <h4 class="pretitle">{{ entry.preTitle }}</h4>
                         <p>{{ entry.richText|striptags|truncate(155) }}</p>
                         <div class="btn btn--secondary btn--diap-green">→ Lees meer</div>
                     </div>
