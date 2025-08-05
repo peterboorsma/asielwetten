@@ -6,7 +6,11 @@
     <ul class="bondgenoten">
         {% for partner in partners %}
             <li>
+                {% if partner.partnerlink %}
                 <a href="{{ partner.partnerlink }}" rel="nofollow noopener" target="_blank">{{ partner.title }}</a>
+                {% else %}
+                {{ partner.title }}
+                {% endif %}
             </li>
         {% endfor %}
     </ul>
