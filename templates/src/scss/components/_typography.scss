@@ -249,10 +249,10 @@ a.newslist__item {
     text-transform: uppercase;
 }
 
-ul.bondgenoten {
+ul.partnerlist {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: .5rem 1rem;
     list-style: none;
     padding: 0;
     

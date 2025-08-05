@@ -2,9 +2,12 @@
 
 {% if overOns.partner %}
     {% set partners = overOns.partner %}
-    <h3>Bondgenoten</h3>
-    <ul class="bondgenoten">
-        {% for partner in partners %}
+<div class="contentblock" id="bondgenoten">
+    <div class="contentblock__text">
+        <h3>Bondgenoten</h3>
+        
+        <ul class="partnerlist">
+            {% for partner in partners %}
             <li>
                 {% if partner.partnerlink %}
                 <a href="{{ partner.partnerlink }}" rel="nofollow noopener" target="_blank">{{ partner.title }}</a>
@@ -12,6 +15,8 @@
                 {{ partner.title }}
                 {% endif %}
             </li>
-        {% endfor %}
-    </ul>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 {% endif %}
