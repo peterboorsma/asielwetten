@@ -6,8 +6,8 @@ return [
     'fieldProfiles' => [
         'standard' => [
             'title' => ['seoTitle', 'title'],
-            'description' => ['seoDescription', 'summary'],
-            'image' => ['seoImage', 'mainImage']
+            'description' => ['seoDescription', 'intro', 'richtext', 'body'],
+            'image' => ['seoImage', 'image']
         ]
     ],
 ];
