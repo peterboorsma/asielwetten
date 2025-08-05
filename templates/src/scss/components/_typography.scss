@@ -85,6 +85,13 @@ p {
     
 }
 
+sup {
+    font-size: 70%;
+    font-style: italic;
+    line-height: 1;
+    top: 0;
+}
+
 // For form labels and such
 .label {
     font-size: .75rem;
@@ -149,15 +156,21 @@ time {
 .article__content .contentblock__text p,
 .article__content .contentblock__text li,
 .contentblock__cols p,
-.contentblock__cols li {
+.contentblock__cols li,
+.cta__content .contentblock__text p,
+.cta__content .contentblock__text li {
     font-size: 1.25rem;
 
     @include breakpoint(xl) {
         font-size: 1.5rem;
     }
+
 }
 
-
+.cta__content .contentblock__text p,
+.cta__content .contentblock__text li {
+    font-weight: 600;
+}
 
 
 .article .contentblock__text li:not(:last-child),
