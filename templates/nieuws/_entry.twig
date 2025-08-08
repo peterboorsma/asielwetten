@@ -13,26 +13,38 @@
             <div class="content">
                 <div class="contentblock">
                     <header class="contentblock__header">
+                        {% if entry.newsType %}
                         <h2 class="pagetitle">{{ entry.title }}</h2>
+                        {% else %}
+                        <h2 class="pagetitle icon-outboundlink">
+                            <a href="{{ entry.externalLink }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a>
+                        </h2>
+                        {% endif %}
                         {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
                     </header>
                 </div>
             </div>
         </div>
 
+        
         <div class="article__content">
             <div class="content">
                 <div class="contentblock">
                     <div class="contentblock__meta">
+                        {% if entry.newsType %}
                         <time datetime="{{ entry.postDate|date('c') }}">{{ entry.postDate|date('d M Y') }}</time>
+                        {% endif %}
                     </div>
 
+                    {% if entry.richText %}
                     <div class="contentblock__text">
                         {{ entry.richText }}
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
+        
 
         <div class="article__footer">
             <div class="content">
