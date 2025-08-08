@@ -1,4 +1,4 @@
-dateModified: 1754391050
+dateModified: 1754645719
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -30,12 +30,13 @@ meta:
     7a2b019e-db5b-4d0b-b9bd-e69504df603f: Embed # Embed
     7fd54027-fd83-4ca4-ac47-7ee712e38c14: 'Stop de asielwetten' # Stop de asielwetten
     8a24d274-81ff-485b-a833-2bb7f51b19f4: Image # Image
+    8bef8adf-4ac1-49d2-a684-38350cd67dd2: 'Nieuws Type' # Nieuws Type
     13a5845c-6563-46a1-a757-6aa9fa6bccc1: 'SEO tags' # SEO tags
     17b994ad-10c2-454d-b160-9332d3c9c7c9: 'Plain Text Single Line' # Plain Text Single Line
     27b18ae2-32be-4e31-a284-73c8bda22e83: Nieuws # Nieuws
     69d1818b-d0bf-4642-a91a-23ce88b22b53: Info # Info
     376a6806-e956-461c-ab22-fad5f338b120: Simple # Simple
-    1541c9cc-8eac-456a-9dc1-fc556741c310: 'Social media link' # Social media link
+    1541c9cc-8eac-456a-9dc1-fc556741c310: 'External Link' # External Link
     3288ca7d-f208-402b-bd8f-66be98e80794: Actieblokken # Actieblokken
     04365d94-514d-42e9-a6a7-020827330159: 'Blijf op de hoogte' # Blijf op de hoogte
     6909af19-442f-4e6d-8d1c-886c431e6d48: Downloads # Downloads

@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: newsType
+instructions: 'Zet uit als je een nieuwsbericht van een andere website wilt delen. Dan hoef je alleen een titel en een url in te vullen als verwijzing naar het externe nieuwsitem.'
+name: 'Nieuws Type'
+searchable: false
+settings:
+  default: true
+  offLabel: 'Extern nieuwsitem'
+  onLabel: 'Eigen nieuwsitem '
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

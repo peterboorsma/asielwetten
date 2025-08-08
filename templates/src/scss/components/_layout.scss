@@ -118,6 +118,11 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+
+        @include breakpoint(xl) { // 1280px
+        gap: 8rem;
+    }
+
 }
 
 .newslist__item {
@@ -210,7 +215,7 @@
 }
 
 ////////////////////////////////////////////////////
-// ELEMENTEN
+// EMBEDS
 ////////////////////////////////////////////////////
 
 .media--embed {

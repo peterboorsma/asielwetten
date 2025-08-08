@@ -29,6 +29,7 @@
                     {% if nieuws %}
                         <div class="newslist">
                         {% for entry in nieuws %}
+                        {% if nieuws.newsType %}
                             <a class="newslist__item" href="{{ entry.url }}">
                                 <div class="newslist__item__text">
                                     <h3 class="title">{{ entry.title }}</h3>
@@ -50,6 +51,7 @@
                                     {% endif %}
                                 </div>
                             </a>
+                        {% endif %}
                         {% endfor %}
                         </div>
                     {% endif %}

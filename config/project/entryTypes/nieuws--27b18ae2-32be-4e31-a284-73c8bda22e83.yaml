@@ -8,6 +8,29 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-08-08T08:44:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8bef8adf-4ac1-49d2-a684-38350cd67dd2 # Nieuws Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75f64848-2a9f-4adb-b61e-5f32074fc0bc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-08-08T09:29:24+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 8988326e-84b6-4875-9de2-714c8eedbb7c
+            userCondition: null
+          -
             dateAdded: '2025-07-29T12:31:09+00:00'
             editCondition: null
             elementCondition: null
@@ -36,7 +59,7 @@ fieldLayouts:
             includeInCards: false
             inputType: null
             instructions: null
-            label: null
+            label: Titel
             max: null
             min: null
             name: null
@@ -55,14 +78,51 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-08-08T09:32:38+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 8bef8adf-4ac1-49d2-a684-38350cd67dd2 # Nieuws Type
+                  layoutElementUid: 75f64848-2a9f-4adb-b61e-5f32074fc0bc
+                  uid: b1f73817-417e-4a2c-812a-c6c06fbf200f
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 1541c9cc-8eac-456a-9dc1-fc556741c310 # External Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Link naar extern nieuwsbericht'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c481a33d-e64d-4809-aa87-4b2e09fa9b6b
+            userCondition: null
+            warning: null
+            width: 50
+          -
             dateAdded: '2025-07-29T12:30:24+00:00'
             editCondition: null
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 8bef8adf-4ac1-49d2-a684-38350cd67dd2 # Nieuws Type
+                  layoutElementUid: 75f64848-2a9f-4adb-b61e-5f32074fc0bc
+                  uid: e7ab44c6-58a9-4307-aae4-4f730bb0394b
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: 'Body tekst'
             providesThumbs: false
             required: false
             tip: null
@@ -74,12 +134,22 @@ fieldLayouts:
           -
             dateAdded: '2025-07-29T12:30:24+00:00'
             editCondition: null
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 8bef8adf-4ac1-49d2-a684-38350cd67dd2 # Nieuws Type
+                  layoutElementUid: 75f64848-2a9f-4adb-b61e-5f32074fc0bc
+                  uid: b264471b-5809-4004-94d7-f702702d843d
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 8a24d274-81ff-485b-a833-2bb7f51b19f4 # Image
             handle: null
             includeInCards: false
             instructions: null
-            label: null
+            label: Afbeelding
             providesThumbs: false
             required: false
             tip: null
@@ -92,7 +162,17 @@ fieldLayouts:
         uid: 65d5b937-5071-404b-99d1-a3060108512d
         userCondition: null
       -
-        elementCondition: null
+        elementCondition:
+          class: craft\elements\conditions\entries\EntryCondition
+          conditionRules:
+            -
+              class: craft\fields\conditions\LightswitchFieldConditionRule
+              fieldUid: 8bef8adf-4ac1-49d2-a684-38350cd67dd2 # Nieuws Type
+              layoutElementUid: 75f64848-2a9f-4adb-b61e-5f32074fc0bc
+              uid: f7549788-335f-4d93-9829-9a82c2d6623d
+              value: true
+          elementType: craft\elements\Entry
+          fieldContext: global
         elements:
           -
             dateAdded: '2025-07-29T12:30:24+00:00'

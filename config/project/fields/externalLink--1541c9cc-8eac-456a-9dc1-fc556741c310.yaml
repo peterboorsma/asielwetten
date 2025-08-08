@@ -1,7 +1,7 @@
 columnSuffix: null
-handle: socialMediaLink
+handle: externalLink
 instructions: null
-name: 'Social media link'
+name: 'External Link'
 searchable: false
 settings:
   fullGraphqlData: true
