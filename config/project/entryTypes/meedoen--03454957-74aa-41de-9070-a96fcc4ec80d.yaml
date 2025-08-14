@@ -329,7 +329,7 @@ fieldLayouts:
             label: 'WhatsApp bericht tekst'
             providesThumbs: false
             required: false
-            tip: 'Regelafbrekingen maak je door \n te typen.'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 3a37c167-fe89-43d6-ad37-838ab61841e9
             userCondition: null
