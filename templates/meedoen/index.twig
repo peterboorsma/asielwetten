@@ -26,48 +26,11 @@
             </div>
         </div>
 
+        {% include "_partials/_block_video.twig" %}
+
+        {% if entry.body %}
         <div class="article__content">
             <div class="content">
-                {% set embed = craft.embeddedAssets.get(entry.video.one()) %}
-                <div class="contentblock">
-                    <div class="contentblock__cols">
-                        <div class="contentblock__cols__col">
-                            <h3>Deel de video</h3>
-                            {% if embed %}
-                            <figure class="media--embed">
-                                {{ embed.code }}
-                            </figure>
-                            {% endif %}
-
-                            {% if entry.videoText %}
-                                <div>{{ entry.videoText }}</div>
-                            {% endif %}
-
-                            {% set fileVideo = entry.fileVideo.one() %}
-                            {% if fileVideo %}
-                            <div class="btn-group">
-                                <a href="{{ fileVideo.url }}" class="btn btn--secondary btn--diap-green" target="_blank">↓ Download video (140mb)</a>
-                            </div>
-                            {% endif %}
-                        </div>
-
-                        {% set fileToolkit = entry.fileToolkit.one() %}
-                        {% if fileToolkit %}
-                        <div class="contentblock__cols__col">
-                            <h3>Toolkit</h3>
-                            
-                            {% if entry.toolkitText %}
-                                <div>{{ entry.toolkitText }}</div>
-                            {% endif %}
-                            
-                            <div class="btn-group">
-                                <a href="{{ fileToolkit.url }}" class="btn btn--secondary btn--diap-green" target="_blank">↓ Download toolkit</a>
-                            </div>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-
                 <div class="contentblock">
                     <div class="contentblock__text">
                         {{ entry.body }}
@@ -75,7 +38,8 @@
                 </div>
             </div>
         </div>
-
+        {% endif %}
+        
         {% include "_partials/_cta_organisaties.twig" %}
     </article>
 </main>

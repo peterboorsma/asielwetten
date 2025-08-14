@@ -238,6 +238,80 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 75
+          -
+            dateAdded: '2025-08-14T12:36:37+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 9a73f79f-96d7-4bb3-abef-d37cd376af21
+            userCondition: null
+          -
+            dateAdded: '2025-08-14T12:33:55+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8e4f16b-1f73-48a6-95f3-14eb90a53351 # Button
+            handle: shareInstagram
+            includeInCards: false
+            instructions: null
+            label: 'Video op Instagram'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4fca6f8a-962e-4129-ac17-9363c29783ec
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-14T12:36:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8e4f16b-1f73-48a6-95f3-14eb90a53351 # Button
+            handle: shareFacebook
+            includeInCards: false
+            instructions: null
+            label: 'Video op Facebook'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6493dba7-2a99-4d2e-a80a-749352da4835
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-14T12:36:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8e4f16b-1f73-48a6-95f3-14eb90a53351 # Button
+            handle: shareLinkedin
+            includeInCards: false
+            instructions: null
+            label: 'Video op LinkedIn'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2fe1d432-5252-4ab6-87e4-efad4ae3426d
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-14T14:47:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8e4f16b-1f73-48a6-95f3-14eb90a53351 # Button
+            handle: shareWhatsapp
+            includeInCards: false
+            instructions: null
+            label: 'Link voor Whatsapp'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 93cc8edc-7426-4d40-af7f-6ba1b70bb25c
+            userCondition: null
+            warning: null
+            width: 25
         name: 'Blok video'
         uid: 16cc5dae-c352-43e5-9a90-552056074870
         userCondition: null

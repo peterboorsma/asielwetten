@@ -158,7 +158,9 @@ time {
 .contentblock__cols p,
 .contentblock__cols li,
 .cta__content .contentblock__text p,
-.cta__content .contentblock__text li {
+.cta__content .contentblock__text li,
+.videocontent .contentblock__text p,
+.videocontent .contentblock__text li {
     font-size: 1.25rem;
 
     @include breakpoint(xl) {

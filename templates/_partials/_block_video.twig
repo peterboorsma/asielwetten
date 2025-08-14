@@ -1,0 +1,102 @@
+{% set meedoen = craft.entries.section('meedoen').one() %}
+
+<div class="videoblock">
+    <div class="content">
+        {% set embed = craft.embeddedAssets.get(meedoen.video.one()) %}
+        {% set fileVideo = meedoen.fileVideo.one() %}
+        <div class="videocontent">
+            <div class="videocontent__video video">
+                {% if embed %}
+                <figure class="media--embed">
+                    {{ embed.code }}
+                </figure>
+                {% endif %}
+            </div>
+
+            <div class="videocontent__share share">
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        <h3>Deel de video</h3>
+
+                        {% if meedoen.videoText %}
+                            {{ meedoen.videoText }}
+                        {% endif %}
+                    </div>
+
+                    <div class="sharebtns">
+                        {% if meedoen.shareInstagram %}
+                        <a href="{{ meedoen.shareInstagram }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareInstagram.title }}">
+                            <span class="btn__icon">
+                                {% include '_partials/social_icons/icon_instagram.twig' %}
+                            </span>
+
+                            <span class="btn__label">
+                                <span>Deel de video op</span>
+                                <span>{{ meedoen.shareInstagram.label }}</span>
+                            </span>
+                        </a>
+                        {% endif %}                                
+
+                        {% if meedoen.shareFacebook %}
+                        <a href="{{ meedoen.shareFacebook }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareFacebook.title }}">
+                            <span class="btn__icon">
+                                {% include '_partials/social_icons/icon_facebook.twig' %}
+                            </span>
+
+                            <span class="btn__label">
+                                <span>Deel de video op</span>
+                                <span>{{ meedoen.shareFacebook.label }}</span>
+                            </span>
+                        </a>
+                        {% endif %}
+
+                        {% if meedoen.shareLinkedin %}
+                        <a href="{{ meedoen.shareLinkedin }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareLinkedin.title }}">
+                            <span class="btn__icon">
+                                {% include '_partials/social_icons/icon_linkedin.twig' %}
+                            </span>
+
+                            <span class="btn__label">
+                                <span>Deel de video op</span>
+                                <span>{{ meedoen.shareLinkedin.label }}</span>
+                            </span>
+                        </a>
+                        {% endif %}
+
+                        {% if meedoen.shareWhatsapp %}
+                        <a href="{{ meedoen.shareWhatsapp }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareWhatsapp.title }}">
+                            <span class="btn__icon">
+                                {% include '_partials/social_icons/icon_whatsapp.twig' %}
+                            </span>
+
+                            <span class="btn__label">
+                                <span>Deel de video via</span>
+                                <span>{{ meedoen.shareWhatsapp.label }}</span>
+                            </span>
+                        </a>
+                        {% endif %}
+
+                        {% set meedoenLink = "https://stopdeasielwetten.nl/meedoen" %}
+                        {% set meedoenLinkText = "Kopieer link naar deze pagina" %}
+                        <button class="btn btn--secondary btn--clipboard btn--diap-green" target="_blank" onclick="copyToClipboard('{{ meedoenLink }}')">{{ meedoenLinkText }}</button>
+
+                        {% if fileVideo %}
+                        <a href="{{ fileVideo.url }}" class="btn btn--secondary btn--diap-green btn--download" target="_blank">Download video (140mb)</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            const button = document.querySelector('.btn--clipboard');
+            button.textContent = 'Link gekopieerd';
+        }).catch(err => {
+            console.error('Fout bij kopiëren:', err);
+        });
+    }
+</script>

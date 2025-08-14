@@ -215,6 +215,58 @@
 }
 
 ////////////////////////////////////////////////////
+// BLOCK VIDEO 
+////////////////////////////////////////////////////
+.videoblock {
+    padding-block: 4rem;
+    background-color: var(--yellow);
+    color: var(--green);
+}
+
+
+.videocontent {
+    display: grid;
+    gap: 4rem;
+    grid-template-areas: "video" "share";
+
+    @include breakpoint(lg) { // 1024px
+        grid-template-areas: "video share";
+    }
+
+    &__video {
+        grid-area: video;
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint(lg) { // 1024px
+            min-width: 36rem;
+        }
+    }
+
+    &__share {
+        grid-area: share;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h3 {
+            font-size: clamp(1.25rem, 4vw, 4rem);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .sharebtns {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+
+    }
+}
+
+////////////////////////////////////////////////////
 // EMBEDS
 ////////////////////////////////////////////////////
 
@@ -223,7 +275,7 @@
     width: 100%;
     height: auto;
     max-width: 49rem;
-    max-height: 80vh;
+    max-height: 92vh;
     overflow: hidden;
 
     iframe {

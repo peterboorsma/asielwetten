@@ -1,4 +1,4 @@
-dateModified: 1755170531
+dateModified: 1755183111
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -56,6 +56,7 @@ meta:
     cd097818-5357-4ae3-8c53-200e0cfa5b51: 'Matrix Meedoen Acties' # Matrix Meedoen Acties
     d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5: 'Plain Text Multiline' # Plain Text Multiline
     ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1: Download # Download
+    f8e4f16b-1f73-48a6-95f3-14eb90a53351: Button # Button
     f13add3f-9028-4bde-8aac-5b72ab5f0bd1: Partnerlogos # Partnerlogos
 plugins:
   ckeditor:
