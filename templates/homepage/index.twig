@@ -33,21 +33,9 @@
         </div>
     </section>
 
-    {% set meedoen = craft.entries.section('meedoen').one() %}
-    {% set embed = craft.embeddedAssets.get(meedoen.video.one()) %}
-    {% if embed %}
     <section class="section section--video">
-        <div class="content">
-            <div class="contentblock">
-                <div class="contentblock__embed">
-                    <figure class="media--embed">
-                            {{ embed.code }}
-                    </figure>
-                </div>
-            </div>
-        </div>
+        {% include "_partials/_block_video.twig" %}
     </section>
-    {% endif %}
 
     <section class="section section--actie">
         <div class="content sectionheader">
