@@ -296,6 +296,12 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: '2025-08-14T16:50:33+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 00b78b31-8367-4cc3-95c3-4c094c9f084f
+            userCondition: null
+          -
             dateAdded: '2025-08-14T14:47:46+00:00'
             editCondition: null
             elementCondition: null
@@ -309,6 +315,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 93cc8edc-7426-4d40-af7f-6ba1b70bb25c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-08-14T16:49:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5 # Plain Text Multiline
+            handle: messageText
+            includeInCards: false
+            instructions: null
+            label: 'WhatsApp bericht tekst'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a37c167-fe89-43d6-ad37-838ab61841e9
             userCondition: null
             warning: null
             width: 25

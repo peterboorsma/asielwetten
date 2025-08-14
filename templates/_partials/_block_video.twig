@@ -64,25 +64,29 @@
                         {% endif %}
 
                         {% if meedoen.shareWhatsapp %}
-                        <a href="{{ meedoen.shareWhatsapp }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareWhatsapp.title }}">
+                        {% set messageText = meedoen.messageText %}
+                        {% set messageLink = "https://stopdeasielwetten.nl/meedoen" %}
+                        {% set whatsAppUrl = "https://api.whatsapp.com/send?text=" ~ (messageText | json_encode | url_encode) ~ "%20" ~ (messageLink | url_encode) %}
+
+                        <a href="{{ whatsAppUrl }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareWhatsapp.title }}">
                             <span class="btn__icon">
                                 {% include '_partials/social_icons/icon_whatsapp.twig' %}
                             </span>
 
                             <span class="btn__label">
-                                <span>Deel de video via</span>
+                                <span>Deel via</span>
                                 <span>{{ meedoen.shareWhatsapp.label }}</span>
                             </span>
                         </a>
                         {% endif %}
 
-                        {% set meedoenLink = "https://stopdeasielwetten.nl/meedoen" %}
-                        {% set meedoenLinkText = "Kopieer paginalink" %}
-                        <button class="btn btn--secondary btn--clipboard btn--diap-green" target="_blank" onclick="copyToClipboard('{{ meedoenLink }}')">{{ meedoenLinkText }}</button>
-
                         {% if fileVideo %}
                         <a href="{{ fileVideo.url }}" class="btn btn--secondary btn--diap-green btn--download" target="_blank">Download video (140mb)</a>
                         {% endif %}
+
+                        {% set meedoenLink = "https://stopdeasielwetten.nl/meedoen" %}
+                        {% set meedoenLinkText = "Kopieer paginalink" %}
+                        <button class="btn btn--secondary btn--clipboard btn--diap-green" target="_blank" onclick="copyToClipboard('{{ meedoenLink }}')">{{ meedoenLinkText }}</button>
                     </div>
                 </div>
             </div>
