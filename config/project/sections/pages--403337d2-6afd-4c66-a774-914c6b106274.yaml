@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 2fac30b3-8ffa-4d72-82bc-6b144ee5422c # Pages
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7fd54027-fd83-4ca4-ac47-7ee712e38c14: # Stop de asielwetten
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/_entry.twig
+    uriFormat: 'pages/{slug}'
+type: channel
