@@ -66,7 +66,7 @@
                         {% if meedoen.shareWhatsapp %}
                         {% set messageText = meedoen.messageText %}
                         {% set messageLink = "https://stopdeasielwetten.nl/meedoen" %}
-                        {% set whatsAppUrl = "https://api.whatsapp.com/send?text=" ~ (messageText | json_encode | url_encode) ~ "%20" ~ (messageLink | url_encode) %}
+                        {% set whatsAppUrl = "https://api.whatsapp.com/send?text=" ~ (messageText | url_encode) ~ "%20" ~ (messageLink | url_encode) %}
 
                         <a href="{{ whatsAppUrl }}" class="btn btn--primary btn--diap-green" target="_blank" title="{{ meedoen.shareWhatsapp.title }}">
                             <span class="btn__icon">
