@@ -41,13 +41,10 @@
     padding-block: 8rem;
 }
 
-
-
 .contentblock {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    
 
     @include breakpoint(xl) { // 1280px
         gap: 4rem;
@@ -311,11 +308,6 @@
 
 .sociallinks__newsletter {
     flex-grow: 1;
-}
-
-.sociallinks__links {
-    display: flex;
-    gap: 1rem;
 }
 
 .sociallinks__newsletter,
