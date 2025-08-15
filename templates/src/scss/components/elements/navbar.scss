@@ -59,7 +59,6 @@ body.nav-open {
 
 
 h1.sitename {
-    
     z-index: 11;
     display: flex;
     align-items: flex-end;
@@ -133,14 +132,14 @@ nav.mainnav {
 ul.nav__items {
     display: flex;
     flex-direction: column;
-    //gap: 1rem;
     list-style: none;
     padding: 0;
-
+    transform: rotate(-1deg);
 
     > li {
         font-size: clamp(2rem,8vw,8rem);
-        font-weight: 700;
+        font-weight: 800;
+        text-transform: uppercase;
 
         a.nav__item {
             color: var(--green);
