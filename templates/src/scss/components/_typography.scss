@@ -256,8 +256,12 @@ a.sociallinks__link {
 
 a.newslist__item {
     text-decoration: none;
-    
 
+    .title,
+    .pretitle {
+        margin-bottom: .5rem;
+    }
+    
     .btn {
         margin-block-start: 1.5rem;
     }
