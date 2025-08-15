@@ -209,6 +209,69 @@
 }
 
 ////////////////////////////////////////////////////
+// MEEDOEN COLS 
+////////////////////////////////////////////////////
+
+.contentblocks {
+    background-color: var(--yellow);
+    color: var(--green);
+    padding-block: 4rem;
+
+    .blocks {
+        display: grid;
+        gap: 4rem;
+        grid-auto-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "body"
+        "demo";
+
+        @include breakpoint(lg) { // 1024px
+            grid-template-areas: 
+            "header header"
+            "body demo";
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .body {
+            grid-area: body;
+        }
+
+        .demo {
+            grid-area: demo;
+        }
+
+    }
+
+}
+
+// DEMO POSTER
+.demoposter {
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
+    max-width: 36rem;
+    background-color: var(--green);
+    color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    transform: rotate(1deg);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--red);
+        transform: rotate(-1deg);
+    }
+}
+
+////////////////////////////////////////////////////
 // BLOCK VIDEO 
 ////////////////////////////////////////////////////
 .videoblock {
@@ -242,12 +305,6 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
-        h3 {
-            font-size: clamp(1.25rem, 4vw, 4rem);
-            font-weight: 700;
-            text-transform: uppercase;
-        }
     }
 
     .sharebtns {

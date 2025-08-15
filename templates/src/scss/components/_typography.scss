@@ -160,7 +160,9 @@ time {
 .cta__content .contentblock__text p,
 .cta__content .contentblock__text li,
 .videocontent .contentblock__text p,
-.videocontent .contentblock__text li {
+.videocontent .contentblock__text li,
+.contentblocks .contentblock__text p,
+.contentblocks .contentblock__text li  {
     font-size: 1.25rem;
 
     @include breakpoint(xl) {
@@ -201,6 +203,13 @@ time {
 .contentblock__cols h4 {
     font-weight: 700;
     margin-bottom: 0;
+}
+
+.videocontent__share h3,
+.contentblocks .header h3 {
+    font-size: clamp(1.25rem, 4vw, 4rem);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .contentblock__header .pagetitle.icon-outboundlink:after {
@@ -327,6 +336,60 @@ ul.partnerlist {
     li a {
         display: block;
         font-weight: 700;
+    }
+
+}
+
+// DEMO POSTER
+.demoposter {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+
+    &__pretitle {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 1.5rem;
+        word-break: break-word;
+
+        @include breakpoint(sm) {
+            font-size: 1.65rem;
+        }
+
+        @include breakpoint(md) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__date {
+        font-weight: 900;
+        font-size: 1.5rem;
+
+        @include breakpoint(md) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__location {
+        font-weight: 900;
+        font-size: 1.5rem;
+
+        @include breakpoint(md) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        border: 1px solid var(--yellow);
+        border-radius: 1rem;
+        padding: .5rem .75rem;
     }
 
 }

@@ -28,17 +28,38 @@
 
         {% include "_partials/_block_video.twig" %}
 
-        {% if entry.body %}
-        <div class="article__content">
+        <div class="contentblocks">
             <div class="content">
-                <div class="contentblock">
-                    <div class="contentblock__text">
-                        {{ entry.body }}
+                <div class="blocks">
+                    <div class="block header">
+                        <div class="contentblock__text"><h3>Meer doen</h3></div>
                     </div>
+                    {% if entry.body %}
+                    <div class="block body">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                                {{ entry.body }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <div class="block demo">
+                        <a class="demoposter" href="https://stopcriminalization.mdwfnv.org/" rel="noopener noreferrer" target="_blank">
+                            <span class="demoposter__pretitle">Kom naar de FNV-demonstratie:</span>
+                            <span class="demoposter__title">Stop De Criminaliseringswet!</span>
+                            <span class="demoposter__date">7 september</span>
+                            <span class="demoposter__location">Den Haag</span>
+                            <span class="demoposter__link">&rarr; Meer info</span>
+                        </a>
+                    </div>
+
+                    {#<div class="block toolkit"></div>#}
                 </div>
             </div>
         </div>
-        {% endif %}
+
+
         
         {% include "_partials/_cta_organisaties.twig" %}
     </article>
