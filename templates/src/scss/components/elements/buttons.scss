@@ -111,6 +111,11 @@ a.btn {
 
 }
 
+.btn--tertiary.btn--diap-green:hover {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
 ////////////////////////////////////////////////////
 // SHARE BUTTONS VIDEO
 ////////////////////////////////////////////////////
