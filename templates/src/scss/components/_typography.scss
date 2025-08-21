@@ -161,8 +161,10 @@ time {
 .cta__content .contentblock__text li,
 .videocontent .contentblock__text p,
 .videocontent .contentblock__text li,
-.contentblocks .contentblock__text p,
-.contentblocks .contentblock__text li  {
+.contentblocks__toolkit .contentblock__text p,
+.contentblocks__toolkit .contentblock__text li,
+.contentblocks__meedoen .contentblock__text p,
+.contentblocks__meedoen .contentblock__text li {
     font-size: 1.25rem;
 
     @include breakpoint(xl) {
@@ -459,4 +461,8 @@ ol.toc {
     padding: 0;
     list-style: none;
     font-weight: 650;
+
+    li {
+        line-height: 1.2;
+    }
 }
