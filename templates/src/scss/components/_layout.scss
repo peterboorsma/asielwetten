@@ -268,18 +268,10 @@
 .contentblock__imagegrid {
     display: grid;
     gap: 2rem 1rem;
-    //grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
-
-    @include breakpoint(md) { // 768px
-        //grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: repeat(3, auto);
-    }
 
     @include breakpoint(lg) { // 1024px
         gap: 3rem 2rem;
-        //grid-template-columns: repeat(auto-fit, minmax(0, 20rem));
-        //grid-template-rows: auto;
     }
 
     &__item {
