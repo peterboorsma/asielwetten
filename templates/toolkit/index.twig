@@ -57,27 +57,27 @@
                                 {% if entry.imageGrid_1080x1350_title %}<h3>{{ entry.imageGrid_1080x1350_title }}</h3>{% endif %}
                             </div>
 
-                            {% include "_partials/blocks_block_imagegrid.twig" with { 'images': entry.imageGrid_1080x1350 } %}
+                            {% include "_partials/blocks_block_imagegrid.twig" with { images: entry.imageGrid_1080x1350, thumbSize: 'toolkitThumb' } %}
                         </div>
                     </div>
 
-                    <div class="block imagegrid-2">
+                    <div class="block imagegrid-2" id="imagegrid-2">
                         <div class="contentblock">
                             <div class="contentblock__text">
                                 {% if entry.imageGrid_1080x1920_title %}<h3>{{ entry.imageGrid_1080x1920_title }}</h3>{% endif %}
                             </div>
 
-                            {% include "_partials/blocks_block_imagegrid.twig" with { 'images': entry.imageGrid1080x1920 } %}
+                            {% include "_partials/blocks_block_imagegrid.twig" with { images: entry.imageGrid1080x1920, thumbSize: 'toolktThumbStories' } %}
                         </div>
                     </div>
 
-                    <div class="block imagegrid-3">
+                    <div class="block imagegrid-3" id="imagegrid-3">
                         <div class="contentblock">
                             <div class="contentblock__text">
                                 {% if entry.imageGrid_A4_title %}<h3>{{ entry.imageGrid_A4_title }}</h3>{% endif %}
                             </div>
 
-                            {% include "_partials/blocks_block_imagegrid.twig" with { 'images': entry.imageGrid_A4 } %}
+                            {% include "_partials/blocks_block_imagegrid.twig" with { images: entry.imageGrid_A4, thumbSize: 'toolkitThumb' } %}
                         </div>
                     </div>
                 </div>

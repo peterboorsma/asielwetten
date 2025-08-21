@@ -4,7 +4,7 @@
         {% set asset = block.image.one() %}
         {% if asset %}
             <div class="contentblock__imagegrid__item">
-                <img src="{{ asset.getUrl('toolkitthumb') }}" alt="{{ asset.alt }}">
+                <img src="{{ asset.getUrl(thumbSize) }}" alt="{{ asset.alt }}">
                 <a class="btn btn--tertiary btn--diap-green btn--download" href="{{ asset.url }}" download>
                     Download
                 </a>

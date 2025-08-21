@@ -1,10 +1,10 @@
 fill: null
 format: png
-handle: toolkitThumb
-height: 675
+handle: toolktThumbStories
+height: 960
 interlace: none
 mode: fit
-name: 'Toolkit Thumb'
+name: 'Toolkt Thumb Stories'
 position: center-center
 quality: 100
 upscale: true
