@@ -40,9 +40,9 @@
 
                             <div class="contentblock__text">
                                 <ol class="toc" role="list"  aria-label="Inhoudsopgave">
-                                    <li><a href="#imagegrid-1">{% if entry.imageGrid_1080x1350_title %}&darr; {{ entry.imageGrid_1080x1350_title }}{% endif %}</a></li>
-                                    <li><a href="#imagegrid-2">{% if entry.imageGrid_1080x1920_title %}&darr; {{ entry.imageGrid_1080x1920_title }}{% endif %}</a></li>
-                                    <li><a href="#imagegrid-3">{% if entry.imageGrid_A4_title %}&darr; {{ entry.imageGrid_A4_title }}{% endif %}</a></li>
+                                    {% if entry.imageGrid_1080x1350_title %}<li><a href="#imagegrid-1" aria-label="Direct naar {{ entry.imageGrid_1080x1350_title }}">&darr; {{ entry.imageGrid_1080x1350_title }}</a></li>{% endif %}
+                                    {% if entry.imageGrid_1080x1920_title %}<li><a href="#imagegrid-2" aria-label="Direct naar {{ entry.imageGrid_1080x1920_title }}">&darr; {{ entry.imageGrid_1080x1920_title }}</a></li>{% endif %}
+                                    {% if entry.imageGrid_A4_title %}<li><a href="#imagegrid-3" aria-label="Direct naar {{ entry.imageGrid_A4_title }}">&darr; {{ entry.imageGrid_A4_title }}</a></li>{% endif %}
                                 </ol>
                             </div>
                         </div>
