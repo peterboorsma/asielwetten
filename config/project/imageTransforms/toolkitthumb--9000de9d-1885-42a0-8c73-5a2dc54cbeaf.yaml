@@ -1,0 +1,11 @@
+fill: null
+format: png
+handle: toolkitthumb
+height: 675
+interlace: none
+mode: fit
+name: 'Toolkit Thumb'
+position: center-center
+quality: 100
+upscale: true
+width: 540

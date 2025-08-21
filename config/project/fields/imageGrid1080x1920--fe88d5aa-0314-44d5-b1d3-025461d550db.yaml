@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: imageGrid1080x1920
+instructions: null
+name: 'Image Grid 1080x1920'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - f960d373-90c4-46cd-b765-882d2bc89dbb # Matrix Image Grid 1080x1920
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: true
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

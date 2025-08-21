@@ -1,0 +1,42 @@
+color: null
+description: null
+fieldLayouts:
+  b86b7500-204e-434e-9f44-5e611d6e7174:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:dcf3085f-3c03-4fad-a5c8-ce8479e86fc1'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-21T11:59:44+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8a24d274-81ff-485b-a833-2bb7f51b19f4 # Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcf3085f-3c03-4fad-a5c8-ce8479e86fc1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c46f7c41-6da6-4cd5-b020-4dbceab1004e
+        userCondition: null
+handle: images_1080x1920
+hasTitleField: false
+icon: grid
+name: 'Matrix Image Grid 1080x1920'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

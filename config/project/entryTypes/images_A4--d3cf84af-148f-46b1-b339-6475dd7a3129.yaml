@@ -1,0 +1,42 @@
+color: null
+description: null
+fieldLayouts:
+  ef2eeec1-bf95-472d-9af9-defd15065713:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:8e208684-67ca-4caa-a983-8fe6c5b4962e'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-21T12:02:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8a24d274-81ff-485b-a833-2bb7f51b19f4 # Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8e208684-67ca-4caa-a983-8fe6c5b4962e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd560f6c-b377-4722-af31-bf1505788ca8
+        userCondition: null
+handle: images_A4
+hasTitleField: false
+icon: grid
+name: 'Matrix Image Grid A4'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

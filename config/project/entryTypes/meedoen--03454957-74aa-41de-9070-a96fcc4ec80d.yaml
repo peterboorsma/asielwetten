@@ -342,22 +342,22 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-08-02T11:39:28+00:00'
+            dateAdded: '2025-08-21T10:41:14+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1 # Download
-            handle: fileToolkit
+            fieldUid: 17b994ad-10c2-454d-b160-9332d3c9c7c9 # Plain Text Single Line
+            handle: toolkitTitle
             includeInCards: false
-            instructions: '.zip file'
-            label: 'Upload toolkit'
+            instructions: null
+            label: Titel
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 89e84986-df6e-4dab-808b-6a2846fedeed
+            uid: 2af95212-c870-4239-876f-9c4250653c3a
             userCondition: null
             warning: null
-            width: 25
+            width: 75
           -
             dateAdded: '2025-08-01T08:53:52+00:00'
             editCondition: null
@@ -366,7 +366,7 @@ fieldLayouts:
             handle: toolkitText
             includeInCards: false
             instructions: null
-            label: 'Tekst bij toolkit'
+            label: Tekst
             providesThumbs: false
             required: false
             tip: null
@@ -377,6 +377,38 @@ fieldLayouts:
             width: 75
         name: 'Blok Toolkit'
         uid: a1882d56-9f85-4592-ab3f-0efc0fe94c04
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-01T09:02:30+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'De tekst moet door Peter worden aangepast. Je kunt alleen de link aanpassen.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 771aa886-dd4c-4942-8869-a313c73437f0
+            userCondition: null
+          -
+            dateAdded: '2025-08-21T10:43:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 1541c9cc-8eac-456a-9dc1-fc556741c310 # External Link
+            handle: demoLink
+            includeInCards: false
+            instructions: null
+            label: 'Externe link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20ab2344-4c0c-41f1-bcd3-913fb5b000e1
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Blok Demo'
+        uid: f7a9fb37-f971-4d73-b974-afdc89d1a67e
         userCondition: null
       -
         elementCondition: null
@@ -457,21 +489,6 @@ fieldLayouts:
             width: 75
         name: 'CTA meedoen'
         uid: 662130e8-d95c-4353-bcf9-6e67ffa0f098
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2025-08-01T09:02:30+00:00'
-            dismissible: false
-            elementCondition: null
-            style: tip
-            tip: ''
-            type: craft\fieldlayoutelements\Tip
-            uid: 771aa886-dd4c-4942-8869-a313c73437f0
-            userCondition: null
-        name: 'Blok acties'
-        uid: f7a9fb37-f971-4d73-b974-afdc89d1a67e
         userCondition: null
 handle: meedoen
 hasTitleField: true

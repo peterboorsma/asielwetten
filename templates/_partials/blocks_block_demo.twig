@@ -1,0 +1,11 @@
+{% set meedoen = craft.entries.section('meedoen').one() %}
+<div class="block demo">
+    <a class="demoposter" href="{{ meedoen.demoLink }}" rel="noopener noreferrer" target="_blank">
+        <span class="demoposter__title">Kom naar de landelijke demonstratie tegen de asielwetten</span>
+        <span class="demoposter__icon">
+            {% include "_partials/social_icons/icon_cross.twig" with { 'fillColor': '#ffe85e' } %}
+        </span>
+        <span class="demoposter__info">7 september<br>Den Haag</span>
+        <span class="demoposter__link">&rarr; Meer info</span>
+    </a>
+</div>

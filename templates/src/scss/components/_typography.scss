@@ -120,7 +120,7 @@ time {
     text-transform: uppercase;
 }
 
-.pagetitle {
+.pagetitle { // Zie verderop de icon settings
     font-size: clamp(2rem,8vw,8rem);
     font-weight: 800;
 }
@@ -261,7 +261,9 @@ a.sociallinks__link {
     margin-block-end: 4rem;
 }
 
-
+////////////////////////////////////////////////////
+// NEWS LIST
+////////////////////////////////////////////////////
 
 a.newslist__item {
     text-decoration: none;
@@ -340,48 +342,99 @@ ul.partnerlist {
 
 }
 
-// DEMO POSTER
-.demoposter {
-    text-align: center;
+////////////////////////////////////////////////////
+// PAGETITLE ICONS
+////////////////////////////////////////////////////
+
+.pagetitle:has(.pagetitle__icon) {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    @include breakpoint(xl) { // 1280px
+        gap: 2rem;
+    }
+}
+
+.pagetitle__icon { // inline icon, bijv. op Toolkit pagina
+    width: 2rem;
+    height: auto;
+    display: inline-flex;
+
+    @include breakpoint(md) { // 768px
+        width: 3rem;
+    }
+
+    @include breakpoint(lg) { // 1024px
+        width: 4rem;
+    }
+
+    @include breakpoint(xl) { // 1280px
+        width: 5rem;
+    }
+}
+
+////////////////////////////////////////////////////
+//MEEDOEN BLOCK TOOLKIT 
+////////////////////////////////////////////////////
+
+a.block.toolkit {
     text-decoration: none;
-    text-transform: uppercase;
+    color: var(--yellow);
+
+    h3 {
+        font-size: clamp(1.25rem,3vw,3rem);
+    }
+}
+
+.toolkit__link {
+    font-weight: 600;
+    border: 1px solid var(--yellow);
+    border-radius: 1rem;
+    padding: .5rem .75rem;
+    width: fit-content;
+    line-height: 1;
+}
+
+////////////////////////////////////////////////////
+//DEMO POSTER 
+////////////////////////////////////////////////////
+// font-size: clamp(1.25rem,4vw,4rem);
+// font-size: clamp(1.25rem,2.5vw,2.5rem);
+.demoposter {
+    //text-align: center;
+    text-decoration: none;
+    
     line-height: 1;
     margin: 0;
 
-    &__pretitle {
-        font-weight: 600;
-        font-size: 1.25rem;
-    }
-
     &__title {
-        font-weight: 900;
-        font-size: 1.5rem;
+        font-weight: 700;
+        font-size: clamp(1.25rem,3vw,3rem);
         word-break: break-word;
 
         @include breakpoint(sm) {
-            font-size: 1.65rem;
+            //font-size: 1.65rem;
         }
 
         @include breakpoint(md) {
-            font-size: 2.5rem;
-        }
-    }
-
-    &__date {
-        font-weight: 900;
-        font-size: 1.5rem;
-
-        @include breakpoint(md) {
-            font-size: 2.5rem;
+            //font-size: 2.5rem;
         }
     }
 
-    &__location {
+    &__icon {
+        width: 3rem;
+        margin-inline: auto;
+    }
+
+    &__info {
         font-weight: 900;
-        font-size: 1.5rem;
+        //font-size: 1.5rem;
+        text-transform: uppercase;
+        font-size: clamp(1.25rem,4vw,4rem);
 
         @include breakpoint(md) {
-            font-size: 2.5rem;
+            //font-size: 2.5rem;
         }
     }
 
@@ -390,6 +443,7 @@ ul.partnerlist {
         border: 1px solid var(--yellow);
         border-radius: 1rem;
         padding: .5rem .75rem;
+        width: fit-content;
     }
 
 }

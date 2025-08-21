@@ -1,0 +1,87 @@
+{% extends "_layouts/default" %}
+
+{% block styles %}
+{% endblock %}
+
+{% block bodyclass %}yellow bg-green entry{% endblock %}
+
+{% block content %}
+
+<main id="main" class="main" tabindex="-1">
+    <article class="article">
+        <div class="article__header">
+            <div class="content sectionheader">
+                <div class="contentblock">
+                    <header class="contentblock__header">
+                        <h2 class="pagetitle">
+                            <span class="pagetitle__icon">{% include "_partials/social_icons/icon_toolkit.twig" with { 'fillColor': '#ffe85e' } %}</span>
+                            {{ entry.title }}
+                        </h2>
+                    </header>
+
+                    {% if entry.intro %}
+                    <div class="contentblock__text">
+                        {{ entry.intro }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="contentblocks__toolkit">
+            <div class="content">
+                <div class="blocks">
+                    {% if entry.body %}
+                    <div class="block body">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                                {{ entry.body }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% include "_partials/blocks_block_demo.twig" %}
+
+                    <div class="block imagegrid-1">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                                {% if entry.imageGrid_1080x1350_title %}<h3>{{ entry.imageGrid_1080x1350_title }}</h3>{% endif %}
+                            </div>
+
+                            {% include "_partials/blocks_block_imagegrid.twig" with { 'images': entry.imageGrid_1080x1350 } %}
+                        </div>
+                    </div>
+
+                    <div class="block imagegrid-2">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                                {% if entry.imageGrid_1080x1920_title %}<h3>{{ entry.imageGrid_1080x1920_title }}</h3>{% endif %}
+                            </div>
+
+                            {% include "_partials/blocks_block_imagegrid.twig" with { 'images': entry.imageGrid1080x1920 } %}
+                        </div>
+                    </div>
+
+                    <div class="block imagegrid-3">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                                {% if entry.imageGrid_A4_title %}<h3>{{ entry.imageGrid_A4_title }}</h3>{% endif %}
+                            </div>
+
+                            {% include "_partials/blocks_block_imagegrid.twig" with { 'images': entry.imageGrid_A4 } %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include "_partials/_block_video.twig" %}
+    </article>
+</main>
+
+{% include "_partials/nav/_sociallinks.twig" %}
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

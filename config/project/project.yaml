@@ -1,4 +1,4 @@
-dateModified: 1755191868
+dateModified: 1755781496
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -18,7 +18,8 @@ graphql:
 meta:
   __names__:
     1fa88f84-9a34-4eb8-99c9-7f22eb262d28: 'Matrix Partnerlinks' # Matrix Partnerlinks
-    2fac30b3-8ffa-4d72-82bc-6b144ee5422c: Pages # Pages
+    2f41587b-9a36-4622-8d08-d78843a04653: 'Image Grid 1080x1350' # Image Grid 1080x1350
+    2fac30b3-8ffa-4d72-82bc-6b144ee5422c: Toolkit # Toolkit
     3faf8b3a-e3cc-4692-bfbc-985c94d95b04: 'Over Ons' # Over Ons
     4a9f7cf2-d218-47f5-95ff-2d0cc5352f63: 'Stop de asielwetten' # Stop de asielwetten
     4cf40a11-c76e-44eb-80f8-c4aa33a60e3a: Partnerlink # Partnerlink
@@ -37,12 +38,14 @@ meta:
     27b18ae2-32be-4e31-a284-73c8bda22e83: Nieuws # Nieuws
     69d1818b-d0bf-4642-a91a-23ce88b22b53: Info # Info
     376a6806-e956-461c-ab22-fad5f338b120: Simple # Simple
+    725f9f23-e6fd-4cf8-b49c-b01cc65eb02a: 'Image Grid A4' # Image Grid A4
     1541c9cc-8eac-456a-9dc1-fc556741c310: 'External Link' # External Link
     3288ca7d-f208-402b-bd8f-66be98e80794: Actieblokken # Actieblokken
     04365d94-514d-42e9-a6a7-020827330159: 'Blijf op de hoogte' # Blijf op de hoogte
     6909af19-442f-4e6d-8d1c-886c431e6d48: Downloads # Downloads
+    9000de9d-1885-42a0-8c73-5a2dc54cbeaf: 'Toolkit Thumb' # Toolkit Thumb
     97489fb8-6d23-47bf-9b97-f9d05afe8ce6: Meedoen # Meedoen
-    403337d2-6afd-4c66-a774-914c6b106274: Pages # Pages
+    403337d2-6afd-4c66-a774-914c6b106274: Toolkit # Toolkit
     03454957-74aa-41de-9070-a96fcc4ec80d: Meedoen # Meedoen
     12850798-946a-4531-a231-f9e868cf34e8: 'SEO Title' # SEO Title
     a06c8b6d-cf2f-4cd1-98b5-5742625165b7: Homepage # Homepage
@@ -54,10 +57,14 @@ meta:
     ca05a040-7552-46ee-9e63-e43b76993591: 'SEO Image' # SEO Image
     caec2669-e4fb-47d1-b280-d69f8e0f0eaa: Images # Images
     cd097818-5357-4ae3-8c53-200e0cfa5b51: 'Matrix Meedoen Acties' # Matrix Meedoen Acties
+    d3cf84af-148f-46b1-b339-6475dd7a3129: 'Matrix Image Grid A4' # Matrix Image Grid A4
     d3781e8d-e07a-4cbe-beaf-73ccb0fc60b5: 'Plain Text Multiline' # Plain Text Multiline
+    e4953973-575f-431f-88c4-21ddce9cacb2: 'Matrix Image Grid 1080x1350' # Matrix Image Grid 1080x1350
     ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1: Download # Download
     f8e4f16b-1f73-48a6-95f3-14eb90a53351: Button # Button
     f13add3f-9028-4bde-8aac-5b72ab5f0bd1: Partnerlogos # Partnerlogos
+    f960d373-90c4-46cd-b765-882d2bc89dbb: 'Matrix Image Grid 1080x1920' # Matrix Image Grid 1080x1920
+    fe88d5aa-0314-44d5-b1d3-025461d550db: 'Image Grid 1080x1920' # Image Grid 1080x1920
 plugins:
   ckeditor:
     edition: standard

@@ -13,7 +13,11 @@
             <div class="content sectionheader">
                 <div class="contentblock">
                     <header class="contentblock__header">
-                        <h2 class="pagetitle">{{ entry.title }}</h2>
+                        <h2 class="pagetitle">
+                            <span class="pagetitle__icon">{% include "_partials/social_icons/icon_megaphone.twig" with { 'fillColor': '#ffe85e' } %}</span>
+                            {{ entry.title }}
+                        </h2>
+
                         {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
                     </header>
 
@@ -28,12 +32,34 @@
 
         {% include "_partials/_block_video.twig" %}
 
-        <div class="contentblocks">
+        <div class="contentblocks__meedoen">
             <div class="content">
                 <div class="blocks">
                     <div class="block header">
                         <div class="contentblock__text"><h3>Meer doen</h3></div>
                     </div>
+
+                    <a class="block toolkit" href="/toolkit">
+                        <div class="toolkit__handle"></div>
+
+                        <div class="toolkit__content">
+                            <div class="contentblock">
+                                <div class="contentblock__text">
+                                    <h3>{{ entry.toolkitTitle }}</h3>
+                                    {% if entry.toolkitText %}
+                                    {{ entry.toolkitText }}
+                                    {% endif %}
+                                </div>
+
+                                <span class="toolkit__link">&rarr; Naar de toolkit</span>
+                            </div>
+
+                            <div class="toolkit__icon">
+                                {% include "_partials/social_icons/icon_toolkit.twig" with { 'fillColor': '#ffe85e' } %}
+                            </div>
+                        </div>
+                    </a>
+
                     {% if entry.body %}
                     <div class="block body">
                         <div class="contentblock">
@@ -44,22 +70,10 @@
                     </div>
                     {% endif %}
 
-                    <div class="block demo">
-                        <a class="demoposter" href="https://stopcriminalization.mdwfnv.org/" rel="noopener noreferrer" target="_blank">
-                            <span class="demoposter__pretitle">Kom naar de FNV-demonstratie:</span>
-                            <span class="demoposter__title">Stop De Criminaliseringswet!</span>
-                            <span class="demoposter__date">7 september</span>
-                            <span class="demoposter__location">Den Haag</span>
-                            <span class="demoposter__link">&rarr; Meer info</span>
-                        </a>
-                    </div>
-
-                    {#<div class="block toolkit"></div>#}
+                    {% include "_partials/blocks_block_demo.twig" %}
                 </div>
             </div>
         </div>
-
-
         
         {% include "_partials/_cta_organisaties.twig" %}
     </article>
