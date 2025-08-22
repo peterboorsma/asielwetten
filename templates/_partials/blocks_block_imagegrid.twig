@@ -1,12 +1,16 @@
+{# if a pdf file in the 'download' field is available, use it in the button, else use the original image #}
 {% if images %}
 <div class="contentblock__imagegrid">
     {% for block in images %}
-        {% set asset = block.image.one() %}
+        {% set asset = block.image is defined and block.image ? block.image.one() : null %}
+        {% set downloadAsset = block.download is defined and block.download ? block.download.one() : null %}
         {% if asset %}
             <div class="contentblock__imagegrid__item">
                 <img src="{{ asset.getUrl(thumbSize) }}" alt="{{ asset.alt }}" loading="lazy">
-                <a class="btn btn--tertiary btn--diap-green btn--download" href="{{ asset.url }}" download>
-                    Download
+                <a class="btn btn--tertiary btn--diap-green btn--download"
+                   href="{{ downloadAsset ? downloadAsset.url : asset.url }}"
+                   download>
+                    {{ downloadAsset ? 'Download PDF' : 'Download' }}
                 </a>
             </div>
         {% endif %}

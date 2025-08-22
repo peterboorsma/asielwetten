@@ -31,6 +31,7 @@
         <div class="contentblocks__toolkit">
             <div class="content">
                 <div class="blocks">
+{# BODY TEXT #}
                     {% if entry.body %}
                     <div class="block body">
                         <div class="contentblock">
@@ -48,9 +49,9 @@
                         </div>
                     </div>
                     {% endif %}
-
+{# DEMO #}
                     {% include "_partials/blocks_block_demo.twig" %}
-
+{# 1080x1350 #}
                     <div class="block imagegrid-1" id="imagegrid-1">
                         <div class="contentblock">
                             <div class="contentblock__text">
@@ -60,7 +61,7 @@
                             {% include "_partials/blocks_block_imagegrid.twig" with { images: entry.imageGrid_1080x1350, thumbSize: 'toolkitThumb' } %}
                         </div>
                     </div>
-
+{# 1080x1920 #}
                     <div class="block imagegrid-2" id="imagegrid-2">
                         <div class="contentblock">
                             <div class="contentblock__text">
@@ -70,7 +71,7 @@
                             {% include "_partials/blocks_block_imagegrid.twig" with { images: entry.imageGrid1080x1920, thumbSize: 'toolktThumbStories' } %}
                         </div>
                     </div>
-
+{# A4 POSTERS #}
                     <div class="block imagegrid-3" id="imagegrid-3">
                         <div class="contentblock">
                             <div class="contentblock__text">
