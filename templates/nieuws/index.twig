@@ -11,8 +11,8 @@
     {% set nieuws = craft.entries()
         .section('nieuws')
         .all() %}
-    
-    <section class="section">
+
+    <section class="section has-sticker">
         <div class="section__header">
             <div class="content">
                 <div class="contentblock">
@@ -21,6 +21,8 @@
                     </header>
                 </div>
             </div>
+
+            {% include "_partials/_sticker_demo.twig" %}
         </div>
 
         <div class="section__content">

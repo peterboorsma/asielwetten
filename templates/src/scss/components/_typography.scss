@@ -123,10 +123,6 @@ time {
 .pagetitle { // Zie verderop de icon settings
     font-size: clamp(2rem,8vw,8rem);
     font-weight: 800;
-}
-
-.listing .pagetitle,
-.homepage .pagetitle {
     text-transform: uppercase;
 }
 

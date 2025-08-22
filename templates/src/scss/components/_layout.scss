@@ -20,7 +20,7 @@
     padding-block: 4rem;
 
     @include breakpoint(xl) { // 1280px
-        padding-block: 8rem;
+        padding-block: 6rem;
     }
 
 }
@@ -111,10 +111,10 @@
 .newslist {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 
         @include breakpoint(xl) { // 1280px
-        gap: 8rem;
+        gap: 6rem;
     }
 
 }
@@ -146,6 +146,7 @@
 
     &__image {
         width: 24rem; //384px
+        max-width: 100%;
         flex-shrink: 0;
     }
 }
@@ -183,11 +184,11 @@
 .listing {
 
     .section__header {
-        padding-block: 4rem;
+        padding-block: 2rem;
 
-        @include breakpoint(xl) { // 1280px
+        //@include breakpoint(xl) { // 1280px
             //padding-block: 8rem;
-        }
+        //}
     }
 
     .section__content {
@@ -617,4 +618,69 @@
         width: min(48rem,100vw - 4rem);
         margin-inline: auto;
         padding-block-end: 2rem;
+}
+
+////////////////////////////////////////////////////
+// DEMO STICKER
+////////////////////////////////////////////////////
+.has-sticker { // Zie onderaan voor de sticker
+    position: relative;
+}
+
+.listing .has-sticker .section__header {
+    position: relative;
+    padding-block-end: 6rem;
+}
+
+.listing .has-sticker .section__content {
+    padding-block-start: 6rem;
+}
+
+.has-sticker .article__header {
+    position: relative;
+    padding-block-end: 8rem;
+
+    @include breakpoint(lg) { // 1024px
+        padding-block-end: 10rem;
+    }
+
+    @include breakpoint(xxl) { // 1440px
+        padding-block-end: 12rem;
+    }
+}
+
+.sticker {
+    position: absolute;
+    z-index: 1;
+    bottom: -5rem;
+    right: 2rem;
+    width: 10rem;
+    height: auto;
+    transform: rotate(-2deg);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: rotate(2deg) scale(1.2);
+    }
+
+    @include breakpoint(md) { // 768px
+        width: 12rem;
+    }
+
+    @include breakpoint(lg) { // 1024px
+        width: 14rem;
+    }
+
+    @include breakpoint(xl) { // 1280px
+        width: 16rem;
+    }
+
+    @include breakpoint(xxl) { // 1440px
+        width: 18rem;
+    }
+
+    @include breakpoint(xxxl) { // 1920px
+        width: 20rem;
+    }
+
 }
