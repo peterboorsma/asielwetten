@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("/assets/fonts/Figtree-VariableFont_wght.ttf") format("trueType");
+    font-weight: 300 900;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FigtreeItalic";
+    src: url("/assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("trueType");
+    font-weight: 300 900;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-display: swap;
+}
+
+
 body {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
@@ -86,6 +105,7 @@ p {
 }
 
 sup {
+    font-family: "FigtreeItalic";
     font-size: 70%;
     font-style: italic;
     line-height: 1;
