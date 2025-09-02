@@ -28,7 +28,7 @@
             {% include "_partials/_sticker_demo.twig" %}
         </div>
 
-        
+ {# entry.newsType switch ON dan is het een eigen nieuwsbericht #}       
         <div class="article__content">
             <div class="content">
                 <div class="contentblock">
@@ -42,6 +42,11 @@
                     <div class="contentblock__text">
                         {{ entry.richText }}
                     </div>
+                    {% endif %}
+
+                    {% set download = entry.download.one() %}
+                    {% if download %}
+                        <a href="{{ download.url }}" class="btn btn--secondary btn--diap-green btn--download" target="_blank" title="{{ download.title }}">{{ download.title }}</a>
                     {% endif %}
                 </div>
             </div>
