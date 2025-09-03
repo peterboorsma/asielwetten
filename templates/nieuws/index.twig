@@ -53,8 +53,8 @@
                                     {% endif %}
                                 </div>
                             </a>
-                        {% else %}
-                            <a class="newslist__item icon-outboundlink" href="{{ entry.url }}">
+                        {% elseif entry.externalLink %}
+                            <a class="newslist__item icon-outboundlink" href="{{ entry.externalLink }}" target="_blank" rel="noopener">
                                 <div class="newslist__item__text">
                                         <h3 class="title">{{ entry.title }}</h3>
                                         <h4 class="pretitle">{{ entry.preTitle }}</h4>
