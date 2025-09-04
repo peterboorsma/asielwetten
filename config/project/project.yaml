@@ -1,4 +1,4 @@
-dateModified: 1756818611
+dateModified: 1757019614
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -36,6 +36,7 @@ meta:
     13a5845c-6563-46a1-a757-6aa9fa6bccc1: 'SEO tags' # SEO tags
     17b994ad-10c2-454d-b160-9332d3c9c7c9: 'Plain Text Single Line' # Plain Text Single Line
     27b18ae2-32be-4e31-a284-73c8bda22e83: Nieuws # Nieuws
+    50a60e17-d1c8-475a-919f-6c83d37659b0: Footnotes # Footnotes
     69d1818b-d0bf-4642-a91a-23ce88b22b53: Info # Info
     376a6806-e956-461c-ab22-fad5f338b120: Simple # Simple
     725f9f23-e6fd-4cf8-b49c-b01cc65eb02a: 'Image Grid A4' # Image Grid A4
@@ -62,6 +63,7 @@ meta:
     e61748d0-e601-4099-b9c5-2cc96cdffdb7: 'Toolkt Thumb Stories' # Toolkt Thumb Stories
     e4953973-575f-431f-88c4-21ddce9cacb2: 'Matrix Image Grid 1080x1350' # Matrix Image Grid 1080x1350
     ea15277b-7e0a-4d85-b0ad-e03bd8ad68d1: Download # Download
+    ee23579d-2d6d-428e-83d0-15d0e8583bdb: 'Rich text with footnotes' # Rich text with footnotes
     f8e4f16b-1f73-48a6-95f3-14eb90a53351: Button # Button
     f13add3f-9028-4bde-8aac-5b72ab5f0bd1: Partnerlogos # Partnerlogos
     f960d373-90c4-46cd-b765-882d2bc89dbb: 'Matrix Image Grid 1080x1920' # Matrix Image Grid 1080x1920
@@ -75,6 +77,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  footnotes:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      enableAnchorLinks: true
+      enableDuplicateFootnotes: true
   seomate:
     edition: standard
     enabled: true

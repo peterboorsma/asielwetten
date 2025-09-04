@@ -1,12 +1,10 @@
 {% extends "_layouts/default" %}
 
-{% block styles %}
-{% endblock %}
+{% block styles %}{% endblock %}
 
 {% block bodyclass %}yellow bg-green listing{% endblock %}
 
 {% block content %}
-
 <main id="main" class="main" tabindex="-1">
     {% set nieuws = craft.entries()
         .section('nieuws')

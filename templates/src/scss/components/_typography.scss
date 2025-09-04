@@ -104,13 +104,15 @@ p {
     
 }
 
-sup {
+.sectionheader sup {
     font-family: "FigtreeItalic";
     font-size: 70%;
     font-style: italic;
     line-height: 1;
     top: 0;
 }
+
+
 
 // For form labels and such
 .label {
@@ -184,8 +186,12 @@ time {
 .contentblocks__meedoen .contentblock__text li {
     font-size: 1.25rem;
 
-    @include breakpoint(xl) {
+    @include breakpoint(lg) { // 1024px
         font-size: 1.5rem;
+    }
+
+    @include breakpoint(xl) { // 1280px
+        font-size: 1.75rem;
     }
 
 }
@@ -193,6 +199,11 @@ time {
 .cta__content .contentblock__text p,
 .cta__content .contentblock__text li {
     font-weight: 600;
+}
+
+.article .contentblock__text ul,
+.article .contentblock__text ol {
+    margin-bottom:  1.5rem;
 }
 
 
@@ -206,9 +217,11 @@ time {
     margin-bottom:  .75rem;
 }
 
-.article .contentblock__text ul,
-.article .contentblock__text ol {
-    margin-bottom:  1.5rem;
+.article .contentblock__text h2 {
+    font-size: clamp(1.5rem,3.5vw,3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 2.5rem 0 1.5rem 0;
 }
 
 
@@ -216,6 +229,7 @@ time {
 .article .contentblock__text h4 {
     font-size: clamp(1.25rem,3vw,3rem);
     font-weight: 700;
+    line-height: 1.1;
     margin: 0 0 1.5rem 0;
 }
 
@@ -419,6 +433,90 @@ a.block.toolkit {
     padding: .5rem .75rem;
     width: fit-content;
     line-height: 1;
+}
+
+////////////////////////////////////////////////////
+// FOOTNOTES 
+////////////////////////////////////////////////////
+
+sup.footnote {
+    font-family: "Figtree";
+    font-size: .85rem;
+    font-weight: 450;
+    line-height: 1;
+    color: var(--green);
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline-end: .5rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--yellow);
+
+    a {
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: var(--red);
+        cursor: pointer;
+    }
+}
+
+ul.footnotes {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+        gap: 1rem;
+
+    li {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0!important;
+        align-items: baseline;
+    }
+
+    span.number a {
+        font-size: .85rem;
+        font-weight: 450;
+        line-height: 1;
+        color: var(--yellow);
+        border-radius: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline-end: .125rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        background-color: var(--green);
+    }
+
+    span.footnote {
+        flex-grow: 1;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    a.footnote-back {
+        position: relative;
+        width: 1.25rem;
+            height: 1.25rem;
+            display: block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: .75rem;
+            height: .75rem;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 720'%3E%3Cpath d='M360 675V45m0 0L45 360M360 45l315 315' style='fill:none;stroke:%2300944a;stroke-linecap:round;stroke-linejoin:round;stroke-width:90px'/%3E%3C/svg%3E");
+        }
+    }
 }
 
 ////////////////////////////////////////////////////

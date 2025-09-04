@@ -28,6 +28,26 @@
                     </div>
                 </div>
             </div>
+
+            <div class="content qa">
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        {{ entry.richTextWithFootnotes | footnotes }}
+                    </div>
+
+                    <div class="contentblock__text">
+                        <ul class="footnotes">
+                            {% for number, footnote in footnotes() %}
+                            <li id="footnote-{{ loop.index }}">
+                                <span class="number">{{ number | raw }}</span>
+                                <span class="footnote">{{ footnote }}</span>
+                                <a class="footnote-back" href="#fnref:{{ loop.index }}" aria-label="Terug naar de tekst"></a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         {% include "_partials/_cta_meedoen.twig" %}
@@ -38,4 +58,23 @@
 
 {% endblock %}
 
-{% block scripts %}{% endblock %}
+{% block scripts %}
+<script>
+    // Zet URLs in footnotes om naar klikbare links
+    document.querySelectorAll('ul li span.footnote').forEach(li => {
+        li.childNodes.forEach(node => {
+            if (node.nodeType === 3) { // tekstnode
+                // Regex voor URLs
+                const urlRegex = /(https?:\/\/[^\s<]+)/g;
+                if (urlRegex.test(node.textContent)) {
+                    const replaced = node.textContent.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+                    // Nieuwe HTML node maken
+                    const span = document.createElement('span');
+                    span.innerHTML = replaced;
+                    li.replaceChild(span, node);
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

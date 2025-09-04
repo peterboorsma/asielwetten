@@ -13,6 +13,18 @@
             margin-inline: auto;
         }
 
+        @include breakpoint(xl) { // 1280px
+            width: min(80rem,100vw - 8rem);
+        }
+
+    }
+
+    @include breakpoint(lg) { // 1024px
+
+        .content.qa {
+            width: min(70rem,100vw - 8rem);
+        }
+
     }
 }
 

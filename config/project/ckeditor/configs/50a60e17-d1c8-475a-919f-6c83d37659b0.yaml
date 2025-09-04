@@ -1,0 +1,14 @@
+headingLevels:
+  - 2
+  - 3
+name: Footnotes
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - footnotes
+  - bulletedList
+  - numberedList
+  - sourceEditing
