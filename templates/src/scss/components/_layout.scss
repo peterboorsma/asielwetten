@@ -652,6 +652,7 @@
 .sticker {
     position: absolute;
     z-index: 1;
+    overflow: hidden;
     bottom: -5rem;
     right: 2rem;
     width: 10rem;
@@ -675,12 +676,13 @@
         width: 16rem;
     }
 
-    @include breakpoint(xxl) { // 1440px
-        width: 18rem;
-    }
+    //@include breakpoint(xxl) { // 1440px
+        //width: 18rem;
+    //}
 
     @include breakpoint(xxxl) { // 1920px
         width: 20rem;
+        right: 4rem;
     }
 
 }
