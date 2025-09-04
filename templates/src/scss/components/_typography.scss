@@ -452,13 +452,14 @@ sup.footnote {
     margin-inline-end: .5rem;
     width: 1.25rem;
     height: 1.25rem;
-    background-color: var(--yellow);
+    background-color: var(--yellow-light);
 
     a {
         text-decoration: none;
     }
 
     &:hover {
+        color: var(--yellow);
         background-color: var(--red);
         cursor: pointer;
     }
@@ -483,7 +484,7 @@ ul.footnotes {
         font-size: .85rem;
         font-weight: 450;
         line-height: 1;
-        color: var(--yellow);
+        color: var(--green);
         border-radius: 1rem;
         display: inline-flex;
         align-items: center;
@@ -491,7 +492,7 @@ ul.footnotes {
         margin-inline-end: .125rem;
         width: 1.25rem;
         height: 1.25rem;
-        background-color: var(--green);
+        background-color: var(--yellow-light);
     }
 
     span.footnote {
