@@ -62,7 +62,7 @@ fieldLayouts:
             handle: body
             includeInCards: false
             instructions: null
-            label: Contact
+            label: 'Centrale boodschap'
             providesThumbs: false
             required: false
             tip: null

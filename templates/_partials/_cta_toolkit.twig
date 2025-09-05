@@ -1,0 +1,31 @@
+{% set meedoen = craft.entries.section('meedoen').one() %}
+
+<div class="ctablock ctablock--toolkit">
+    <div class="cta">
+        <div class="cta__icon">
+            {% include "_partials/social_icons/icon_suitcase.twig" with { 'fillColor': '#ffe85e' } %}
+        </div>
+
+        <div class="cta__txt">
+            <div class="cta__header">
+                <h3>{{ meedoen.ctaMeedoenTitle }}</h3>
+            </div>
+
+            <div class="cta__content">
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        {{ meedoen.ctaMeedoenText }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta__footer">
+                <div class="btn-group">
+                    <a href="/meedoen" class="btn btn--secondary btn--yellow">
+                        → Naar de toolkit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

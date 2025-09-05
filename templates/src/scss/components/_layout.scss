@@ -50,7 +50,7 @@
 }
 
 .aside--sociallinks {
-    padding-block: 8rem;
+    padding-block: 4rem;
 }
 
 .contentblock {
@@ -598,14 +598,28 @@
 
 .ctablock {
 
-    &--meedoen {
+    &--toolkit {
         background-color: var(--red);
         color: var(--yellow);
+
+        .cta {
+            flex-direction: column;
+            
+            @include breakpoint(md) { // 768px
+                flex-direction: row;
+            }
+        }
+
     }
 
     &--organisaties {
         background-color: var(--green);
         color: var(--yellow);
+        border-block-end: 1px solid var(--yellow);
+
+        .cta {
+            flex-direction: column;
+        }
     }
 
     a {
@@ -619,9 +633,32 @@
     padding-block: 4rem;
     margin-inline: auto;
     display: flex;
-    flex-direction: column;
     gap: 2rem;
+
+    &__icon {
+        width: 100%;
+        max-width: 13rem;
+        margin-inline: auto;
+
+        svg {
+            transform: rotate(-5deg);
+        }
+
+        @include breakpoint(md) { // 768px
+            width: 25%;
+        }
+    }
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex-grow: 1;
+        margin-inline: auto;
+    }
 }
+
+
 
 ////////////////////////////////////////////////////
 // Sitefooter
@@ -629,7 +666,7 @@
 .footer {
         width: min(48rem,100vw - 4rem);
         margin-inline: auto;
-        padding-block-end: 2rem;
+        padding-block: 2rem;
 }
 
 ////////////////////////////////////////////////////
