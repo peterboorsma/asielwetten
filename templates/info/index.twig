@@ -16,6 +16,12 @@
                         <h2 class="pagetitle">{{ entry.title }}</h2>
                         {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
                     </header>
+
+                    {% if entry.intro %}
+                    <div class="contentblock__text">
+                        {{ entry.intro }}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
