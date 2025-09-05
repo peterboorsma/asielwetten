@@ -1,7 +1,6 @@
 
 :root {
     --navbarHeight: 4.125rem; // 66px
-    --navOptionsBgColor: var(--yellow);
 
     @include breakpoint(xl) { // 1280px
         --navbarHeight: 5.25rem; //84px
@@ -176,7 +175,7 @@ ul.nav__items {
     position: relative;
     z-index: 200;
     height: 2.25rem;
-    background-color: var(--yellow);
+    background-color: var(--red);
     will-change: background-color, transform;
     transition: background-color 0.3s ease-in-out;
 
@@ -188,7 +187,7 @@ ul.nav__items {
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
-            background-color: var(--navOptionsBgColor);
+            background-color: var(--yellow);
             transition: background-color 0.3s ease-in-out;
         }
     }
@@ -207,7 +206,7 @@ ul.nav__items {
     left: .5rem;
     width: 20px;
     height: .1rem;
-    background-color: var(--green);
+    background-color: var(--yellow);
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
@@ -220,7 +219,7 @@ ul.nav__items {
         width: 1.25rem;
         height: .1rem;
         display: block;
-        background-color: var(--green);
+        background-color: var(--yellow);
     }
 
     &::before {
@@ -281,7 +280,7 @@ ul.nav__items {
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-        background-color: var(--navOptionsBgColor);
+        background-color: var(--yellow);
     }
 
 
