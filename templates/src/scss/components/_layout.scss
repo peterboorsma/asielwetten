@@ -123,7 +123,7 @@
 .newslist {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
 
         @include breakpoint(xl) { // 1280px
         gap: 6rem;

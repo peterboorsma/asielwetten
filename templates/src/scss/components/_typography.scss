@@ -24,7 +24,10 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
-    //-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
 }
 body.green {
     color: var(--green);
@@ -282,7 +285,7 @@ time {
 }
 
 .section--nieuws  {
-    color: var(--green)
+    color: var(--green);
 }
 
 a.sociallinks__link {
@@ -292,9 +295,9 @@ a.sociallinks__link {
     border-radius: 50%;
 }
 
-.homepage .section--nieuws .contentblock__header .pagetitle {
-    margin-block-end: 4rem;
-}
+//.homepage .section--nieuws .contentblock__header .pagetitle {
+//    margin-block-end: 4rem;
+//}
 
 ////////////////////////////////////////////////////
 // NEWS LIST
