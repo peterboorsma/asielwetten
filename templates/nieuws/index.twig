@@ -10,7 +10,7 @@
         .section('nieuws')
         .all() %}
 
-    <section class="section has-sticker">
+    <section class="section{# has-sticker #}">
         <div class="section__header">
             <div class="content">
                 <div class="contentblock">
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            {% include "_partials/_sticker_demo.twig" %}
+            {#{% include "_partials/_sticker_demo.twig" %}#}
         </div>
 
         <div class="section__content">
@@ -37,20 +37,6 @@
                                     {#<p>{{ entry.richText|striptags|truncate(155)|raw }}</p>#}
                                     <div class="btn btn--secondary btn--diap-green">→ Lees meer</div>
                                 </div>
-        
-                                {#{% if entry.image.one() %}
-                                <div class="newslist__item__image">
-                                    {% set img = entry.image.one() %}
-                                    <figure class="figure">
-                                        <picture>
-                                            <img src="{{ img.url }}" alt="{{ img.title|raw }}" loading="lazy" />
-                                        </picture>
-        
-                                        {#<figcaption>{{ img.title|raw }}</figcaption>#}
-                                    </figure>
-                                </div>
-                                {% endif %}
-                                #}
                             </a>
                         {% elseif entry.externalLink %}
                             <a class="newslist__item icon-outboundlink" href="{{ entry.externalLink }}" target="_blank" rel="noopener">
