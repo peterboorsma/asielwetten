@@ -38,6 +38,18 @@
                         {% endif %}
                     </div>
 
+                {% if entry.image.one() %}
+                    {% set img = entry.image.one() %}
+                    <figure class="figure contentblock__figure">
+                        <picture>
+                            <source srcset="{{ img.getUrl({ width: 800 }) }} 800w, {{ img.getUrl({ width: 400 }) }} 400w" sizes="(max-width: 600px) 400px, 800px" type="image/jpeg">
+                            <img src="{{ img.getUrl({ width: 800 }) }}" alt="{{ img.title|raw }}" loading="lazy" width="800" height="auto" />
+                        </picture>
+
+                        <figcaption>{{ img.title|raw }}</figcaption>
+                    </figure>
+                {% endif %}                    
+
                     {% if entry.richText %}
                     <div class="contentblock__text">
                         {{ entry.richText }}
