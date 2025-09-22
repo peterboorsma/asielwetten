@@ -8,7 +8,7 @@
 {% block content %}
 
 <main id="main" class="main" tabindex="-1">
-    <article class="article{# has-sticker #}">
+    <article class="article has-sticker">
         <div class="article__header">
             <div class="content">
                 <div class="contentblock">
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            {#{% include "_partials/_sticker_demo.twig" %}#}
+            {% include "_partials/_sticker_petitie.twig" %}
         </div>
 
  {# entry.newsType switch ON dan is het een eigen nieuwsbericht #}       
@@ -81,9 +81,7 @@
     </article>
 </main>
 
-{% include "_partials/nav/_sociallinks.twig" %}
-
-{% include "_partials/_cta_toolkit.twig" %}
+{% include "_partials/_aside.twig" %}
 
 {% endblock %}
 

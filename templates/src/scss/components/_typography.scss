@@ -190,7 +190,8 @@ time {
 .contentblocks__toolkit .contentblock__text p,
 .contentblocks__toolkit .contentblock__text li,
 .contentblocks__meedoen .contentblock__text p,
-.contentblocks__meedoen .contentblock__text li {
+.contentblocks__meedoen .contentblock__text li,
+.asideblock .contentblock__text p {
     font-size: 1.25rem;
 
     @include breakpoint(lg) { // 1024px
@@ -234,7 +235,7 @@ time {
 
 .article .contentblock__text h3,
 .article .contentblock__text h4 {
-    font-size: clamp(1.25rem,3vw,3rem);
+    font-size: clamp(1.75rem,3vw,3rem);
     font-weight: 700;
     line-height: 1.1;
     margin: 0 0 1.5rem 0;
@@ -252,6 +253,10 @@ time {
     font-size: clamp(1.25rem, 4vw, 4rem);
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.asideblock__content.portret .asideblock__content__text h3 {
+    margin: 0 0 1rem 0;
 }
 
 .contentblock__header .pagetitle.icon-outboundlink:after {
@@ -442,6 +447,23 @@ a.block.toolkit {
     line-height: 1;
 }
 
+.docu  {
+
+    h3 {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        word-wrap: anywhere;
+
+        svg.icon-tv {
+            width: 4rem;
+            height: auto;
+        }
+
+    }
+
+}
+
 ////////////////////////////////////////////////////
 // FOOTNOTES 
 ////////////////////////////////////////////////////
@@ -506,6 +528,7 @@ ul.footnotes {
         flex-grow: 1;
         font-size: 1rem;
         line-height: 1.2;
+        word-wrap: anywhere;
     }
 
     a.footnote-back {
@@ -543,13 +566,13 @@ ul.footnotes {
         font-size: clamp(1.25rem,3vw,3rem);
         word-break: break-word;
 
-        @include breakpoint(sm) {
+        //@include breakpoint(sm) {
             //font-size: 1.65rem;
-        }
+        //}
 
-        @include breakpoint(md) {
+        //@include breakpoint(md) {
             //font-size: 2.5rem;
-        }
+        //}
     }
 
     &__icon {

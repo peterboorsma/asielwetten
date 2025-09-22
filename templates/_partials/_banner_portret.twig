@@ -1,0 +1,35 @@
+{% set globalPortretten = craft.globalSets.handle('portretten').one() %}
+
+{% if globalPortretten is not empty %}
+
+{# <div style="background-color: #fff;">{{ dump(globalPortretten.portretten) }}</div> #}
+<div class="asideblock asideblock--portret">
+    {% set randomPortret = globalPortretten.portretten|shuffle|first %}
+    {% if randomPortret %}
+        <div class="asideblock__content portret">
+
+            <div class="asideblock__content__img">
+            {% if randomPortret.imageGlobals.one() %}
+                {% set img = randomPortret.imageGlobals.one() %}
+                <figure class="figure">
+                    <picture>
+                        <source srcset="{{ img.getUrl({ width: 800 }) }} 800w, {{ img.getUrl({ width: 400 }) }} 400w" sizes="(max-width: 600px) 400px, 800px" type="image/jpeg">
+                        <img src="{{ img.getUrl({ width: 800 }) }}" alt="Mijn naam is {{ img.title|raw }}" loading="lazy" />
+                    </picture>
+                </figure>
+            {% endif %}
+            </div>
+
+            <div class="asideblock__content__text">
+                <div class="contentblock">
+                    <div class="contentblock__text">
+                        {{ randomPortret.richText }}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    {% endif %}
+</div>
+{% endif %}

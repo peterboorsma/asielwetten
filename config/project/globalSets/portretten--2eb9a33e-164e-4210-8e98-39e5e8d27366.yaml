@@ -1,30 +1,30 @@
 fieldLayouts:
-  2a84b9cf-7682-4427-97ad-c5da60a68cb1:
+  f92d3f08-3bb6-4a62-9070-e1e7740d59b1:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-07-28T20:02:21+00:00'
+            dateAdded: '2025-09-22T07:34:29+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 17b994ad-10c2-454d-b160-9332d3c9c7c9 # Plain Text Single Line
-            handle: headerNieuwsbrief
+            fieldUid: 9570113b-a86e-4d20-9a57-dd5eafab4cf9 # Portretten
+            handle: null
             includeInCards: false
             instructions: null
-            label: 'Header nieuwsbrief'
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 75704252-bf2f-4a98-925c-61564b26670f
+            uid: d2098ebe-6eb9-4ccd-98e4-bc347f5f6f1c
             userCondition: null
             warning: null
             width: 100
-        name: Nieuwsbrief
-        uid: 5c00b9b7-c478-4e84-be33-1c5e3bd36aaf
+        name: Content
+        uid: 08409c26-8fef-42ac-adb7-2842a6ce800a
         userCondition: null
-handle: socialMedia
-name: 'Blijf op de hoogte'
-sortOrder: 1
+handle: portretten
+name: Portretten
+sortOrder: 2

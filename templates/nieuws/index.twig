@@ -10,7 +10,7 @@
         .section('nieuws')
         .all() %}
 
-    <section class="section{# has-sticker #}">
+    <section class="section has-sticker">
         <div class="section__header">
             <div class="content">
                 <div class="contentblock">
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            {#{% include "_partials/_sticker_demo.twig" %}#}
+            {% include "_partials/_sticker_petitie.twig" %}
         </div>
 
         <div class="section__content">
@@ -55,9 +55,7 @@
     </section>
 </main>
 
-{% include "_partials/nav/_sociallinks.twig" %}
-
-{% include "_partials/_cta_toolkit.twig" %}
+{% include "_partials/_aside.twig" %}
 
 {% endblock %}
 

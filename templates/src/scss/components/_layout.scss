@@ -49,9 +49,6 @@
     background-color: var(--yellow);
 }
 
-.aside--sociallinks {
-    padding-block: 4rem;
-}
 
 .contentblock {
     display: flex;
@@ -321,20 +318,25 @@
         gap: 4rem;
         grid-template-areas: 
         "header"
+        "petitie"
         "toolkit"
-        "demo"
+        "docu"
         "body";
 
         @include breakpoint(lg) { // 1024px
             grid-template-areas: 
             "header header"
-            "toolkit demo"
-            "body extra";
+            "petitie toolkit"
+            "docu body";
         }
 
         .block {
             display: flex;
             flex-direction: column;
+        }
+
+        .docu {
+            grid-area: docu;
         }
 
         .body {
@@ -345,11 +347,41 @@
             grid-area: demo;
         }
 
+        .petitie {
+            grid-area: petitie;
+            display: flex;
+            flex-direction: column;
+            //gap: 2rem;
+
+            .stickerWrapper {
+                
+                display: flex;
+            }
+
+            .sticker { // slordig maar dit is de class van de sticker zelf
+                position: relative;
+                right: auto;
+                bottom: auto;
+                width: 100%;
+                min-width: 18rem;
+                max-width: 24rem;
+                margin-inline: auto;
+
+                &:hover {
+                    transform: rotate(-5deg);
+                }
+            }
+        }
+
         .toolkit {
             grid-area: toolkit;
             align-self: flex-start;
             transform: rotate(-.5deg);
             transition: all 0.3s ease-in-out;
+            
+            @include breakpoint(lg) { // 1024px
+                margin-top: -2rem;
+            }
 
             &:hover {
                 transform: rotate(.5deg);
@@ -456,7 +488,7 @@
         justify-content: center;
 
         @include breakpoint(lg) { // 1024px
-            min-width: 36rem;
+            min-width: 26rem;
         }
     }
 
@@ -485,14 +517,254 @@
     aspect-ratio: 9/16;
     width: 100%;
     height: auto;
-    max-width: 49rem;
-    max-height: 92vh;
+    //max-width: 50vw;
+    //max-height: 50vh;
     overflow: hidden;
+
+    @include breakpoint(md) { // 768px
+        max-width: 50vw;
+        max-height: 80vh;
+    }
 
     iframe {
         width: 100%;
         height: 100%;
         border: none;
+    }
+
+}
+
+
+////////////////////////////////////////////////////
+// ASIDE
+////////////////////////////////////////////////////
+
+.aside {
+    
+    margin-inline: auto;
+    width: calc(100% - 2rem);
+
+    @include breakpoint(lg) { // 1024px
+        width: min(80rem,100vw - 4rem);
+    }
+
+}
+
+.asideblocks {
+    //background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    padding-block: 4rem;
+    row-gap: 2rem;
+
+    @include breakpoint(lg) { // 1024px
+        row-gap: 4rem;
+    }
+}
+
+.asideblock {
+    //background-color: blue;
+
+    &--portret {
+        display: flex;
+        grid-column: 1 / -1;
+    }
+    
+    &--toolkit {
+        display: flex;
+        grid-column: 1 / -1;
+        height: fit-content;
+    }
+
+    &--sociallinks {
+        display: flex;
+        grid-column: 1 / -1;
+    }
+
+    @include breakpoint(sm) { // 448px
+
+        &--toolkit {
+            grid-column: 2 / 12;
+        }
+
+        &--sociallinks {
+            grid-column: 2 / 12;
+        }
+
+    }
+
+    @include breakpoint(lg) { // 1024px
+
+        &--portret {
+            grid-column: 1 / 8;
+            grid-row-start: 1;
+        }
+
+        &--toolkit {
+            grid-column: 9 / 13;
+            grid-row-start: 1;
+        }
+
+    }
+
+}
+
+//.asideblock__content {}
+
+
+.asideblock__content.portret {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--yellow);
+    color: var(--green);
+
+    @include breakpoint(md) { // 768px
+        flex-direction: row;
+    }
+
+    .asideblock__content__img {
+        min-width: 33%;
+        max-width: 25rem;
+        margin-inline: auto;
+        transform: rotate(-1deg);
+    }
+
+    //&__text {}
+
+    @include breakpoint(lg) { // 1024px
+        padding: 2rem;
+
+        .asideblock__content__img {
+            min-width: 70%;
+            max-width: 32rem;
+        }
+
+        .asideblock__content__text {
+            //width: 100%;
+        }
+
+    }
+
+}
+
+.asideblock__content.toolkit {
+    display: flex;
+    width: 100%;
+}
+
+.toolkitCta {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    padding-block: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    > * {
+        box-sizing: border-box;
+        min-width: 0; // voorkomt overflow door lange woorden/content
+    }
+
+
+    .toolkitCta__icon {
+        grid-column: 1 / 5;
+        grid-row: 1 / 3;
+
+        svg {
+            //max-width: 12rem;
+            margin-right: 2rem;
+            transform: rotate(-3deg);
+        }
+    }
+
+    .toolkitCta__header {
+        grid-column: 5 / 13;
+        grid-row-start: 1;
+    }
+
+    .toolkitCta__text {
+        grid-column: 5 / 13;
+        grid-row-start: 2;
+    }
+
+    .toolkitCta__footer {
+        grid-column: 5 / 13;
+        grid-row-start: 3;
+    }
+
+    @include breakpoint(sm) { // 448px
+
+        .toolkitCta__text {
+            grid-column: 1 / -1;
+            grid-row-start: 3;
+        }
+
+        .toolkitCta__footer {
+            grid-column: 1 / -1;
+            grid-row-start: 4;
+        }
+
+    }
+
+    @include breakpoint(md) { // 768px
+
+        .toolkitCta__icon {
+            grid-column: 1 / 4;
+            grid-row: 1 / 3;
+
+            svg {
+                max-width: 12rem;
+            }
+        }
+
+        .toolkitCta__header {
+            grid-column: 4 / 13;
+        }
+
+        .toolkitCta__text {
+            grid-column: 4 / 13;
+            grid-row-start: 2;
+        }
+
+        .toolkitCta__footer {
+            grid-column: 4 / 13;
+            grid-row-start: 3;
+        }
+
+    }
+
+    @include breakpoint(lg) { // 1024px
+        padding-block: 0;
+
+        .toolkitCta__icon {
+            grid-column: 1 / -1;
+            grid-row: 1;
+            grid-row-start: 1;
+        }
+
+        .toolkitCta__header {
+            grid-column: 1 / -1;
+            grid-row-start: 2;
+        }
+
+        .toolkitCta__text {
+            grid-column: 1 / -1;
+            grid-row-start: 3;
+        }
+
+        .toolkitCta__footer {
+            grid-column: 1 / -1;
+            grid-row-start: 4;
+        }
+
+
     }
 
 }
@@ -598,7 +870,7 @@
 
 .ctablock {
 
-    &--toolkit {
+    &--toolkit { // niet meer gebruikt. is nu asideblock--toolkit
         background-color: var(--red);
         color: var(--yellow);
 
@@ -702,7 +974,7 @@
     position: absolute;
     z-index: 1;
     overflow: hidden;
-    bottom: -5rem;
+    bottom: -3rem;
     right: 2rem;
     width: 10rem;
     height: auto;

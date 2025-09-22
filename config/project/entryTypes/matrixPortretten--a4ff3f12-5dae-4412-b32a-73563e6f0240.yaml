@@ -1,0 +1,87 @@
+color: null
+description: null
+fieldLayouts:
+  f46f13db-754c-417b-aa78-c24e83cf562f:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-22T07:31:31+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 49d516d4-a9d1-48f4-8a47-e30d65bdc38e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-22T07:33:36+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe # Rich text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f677196-3807-4ba1-bca4-64780bcb7670
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-22T07:36:20+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 50c8fd1f-41a5-4eb3-a37b-f145992ab7d7 # Afbeelding 
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b785f71f-4425-4e38-8063-f773584025c3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d08d858e-a257-418a-8978-740ab8256071
+        userCondition: null
+handle: matrixPortretten
+hasTitleField: true
+icon: image-portrait
+name: 'Matrix Portretten'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

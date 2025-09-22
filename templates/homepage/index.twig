@@ -8,7 +8,7 @@
 {% block content %}
 
 <main id="main" class="main" tabindex="-1">
-    <section class="section{# has-sticker#}">
+    <section class="section has-sticker">
         <div class="content sectionheader">
             <div class="contentblock">
                 <header class="contentblock__header">
@@ -32,7 +32,7 @@
             </div>
         </div>
 
-        {#{% include "_partials/_sticker_demo.twig" %}#}
+        {% include "_partials/_sticker_petitie.twig" %}
     </section>
 
     <section class="section section--video">
@@ -67,13 +67,11 @@
             </div>
         </div>
     </section>
-
+    
     {% include "_partials/_homepage_nieuwslist.twig" %}
 </main>
 
-{% include "_partials/nav/_sociallinks.twig" %}
-
-{% include "_partials/_cta_toolkit.twig" %}
+{% include "_partials/_aside.twig" %}
 
 {% endblock %}
 

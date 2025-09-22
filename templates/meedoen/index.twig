@@ -60,6 +60,33 @@
                         </div>
                     </a>
 
+                    <div class="block petitie">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                                <p>Spreek je uit tegen de asielwetten en sluit je aan bij het ‘stop de asielwetten’- bondgenootschap!</p>
+                            </div>
+
+                            <div class="stickerWrapper">{% include "_partials/_sticker_petitie.twig" %}</div>
+                        </div>
+                    </div>
+
+                    <div class="block docu">
+                        <div class="contentblock">
+                            <div class="contentblock__text">
+                               <h3>
+                                <svg class="icon-tv" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 3-5 4-5-4m-.2 18h10.4c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.311-1.311C22 18.72 22 17.88 22 16.2v-4.4c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311C19.72 7 18.88 7 17.2 7H6.8c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.311 1.311C2 9.28 2 10.12 2 11.8v4.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C4.28 21 5.12 21 6.8 21Z"/></svg>
+                                Kijk de documentaire 'Joris en de ongedocumenteerden'</h3>
+
+                               <p>Wie zijn de mensen die hier illegaal verblijven en wie zijn de helpers die vervolging riskeren?</p>
+
+                               <a href="https://npo.nl/start/serie/joris-en-de-ongedocumenteerden/seizoen-1/joris-en-de-ongedocumenteerden" class="btn btn--secondary btn--green" target="_blank" rel="noopener">
+                                &rarr; Bekijk de documentaire
+                               </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
                     {% if entry.body %}
                     <div class="block body">
                         <div class="contentblock">
@@ -70,6 +97,8 @@
                     </div>
                     {% endif %}
 
+                    
+
                     {#{% include "_partials/blocks_block_demo.twig" %}#}
                 </div>
             </div>
@@ -79,9 +108,7 @@
     </article>
 </main>
 
-{% include "_partials/nav/_sociallinks.twig" %}
-
-{% include "_partials/_cta_toolkit.twig" %}
+{% include "_partials/_aside.twig" %}
 
 {% endblock %}
 
