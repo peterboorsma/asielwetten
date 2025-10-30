@@ -3,14 +3,14 @@
 {% set currentSite = element ? element.site : craft.app.sites.currentSite %}
 
 <header class="nav">
-    <div class="nav__header">
+    <div class="nav__header" id="navOptionsFx">
         <h1 class="sitename">
             <a href="{{ currentSite.baseUrl }}" aria-label="{{ 'Homepage'|t }}">
                 Stop de asielwetten
             </a>
         </h1>
 
-        <div class="navoptions" id="navOptionsFx">
+        <div class="navoptions">
             <button class="hamburger hamburger--morph" 
                     id="toggleNavBtn" 
                     aria-expanded="false"
@@ -27,11 +27,11 @@
     <div class="nav__navitems nav__navitems--closed" id="navElement">
         <nav class="mainnav">
             <ul class="nav__items">
-                <li>
+                {#<li>
                     <a href="{{ currentSite.baseUrl }}" class="nav__item {% if currentPath == '' %}nav__item--active{% endif %}">
                         Home
                     </a>
-                </li>
+                </li>#}
 
                 <li>
                     <a href="{{ currentSite.baseUrl ~ 'meedoen' }}" class="nav__item {% if currentPath == 'meedoen' %}nav__item--active{% endif %}">

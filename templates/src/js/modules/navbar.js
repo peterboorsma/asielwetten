@@ -43,12 +43,12 @@ export function navbar() {
         if (Math.abs(prevScrollPos - currentScrollPos) >= 50) {
             if (prevScrollPos > currentScrollPos) {
                 // Toggle between 'visible' and 'invisible' classes to show the header
-                navOptions.classList.remove("navoptions--hidden");
-                navOptions.classList.add("navoptions--visible");
+                navOptions.classList.remove("nav__header--hidden");
+                navOptions.classList.add("nav__header--visible");
             } else {
                 // Toggle between 'visible' and 'invisible' classes to hide the header
-                navOptions.classList.remove("navoptions--visible");
-                navOptions.classList.add("navoptions--hidden");
+                navOptions.classList.remove("nav__header--visible");
+                navOptions.classList.add("nav__header--hidden");
             }
 
             prevScrollPos = currentScrollPos;

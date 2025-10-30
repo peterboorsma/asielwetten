@@ -26,25 +26,51 @@ body.nav-open {
 }
 
 .nav__header {
-    display: flex;
-    align-items: center;
-    //justify-content: flex-end;
-    height: var(--navbarHeight);
-}
-
-.navoptions {
     position: fixed;
-    top: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
     right: 1.5rem;
     z-index: 12;
     display: flex;
     align-items: center;
+    height: var(--navbarHeight);
+    background-color: var(--green);
 
+    &--visible {
+        transform: translateX(0); // Changed from translateZ(0)
+        will-change: transform;
+        transition: all 0.35s;
+    }
+
+    &--hidden {
+        transform: translateY(-100%); // Changed from translateY(-140%)
+        transition: all 0.35s;
+    }
+
+}
+
+.navoptions {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+    @include breakpoint(lg) { // 1024px
+        margin-right: 2rem;
+    }
+
+     @include breakpoint(xl) { // 1280px
+        margin-right: 4rem;
+    }
+
+    /*
     @include breakpoint(xl) { // 1280px
         top: 2rem;
         right: 2rem;
     }
+    */
 
+/*
     &--visible {
         transform: translateX(0); // Changed from translateZ(0)
         will-change: transform;
@@ -55,6 +81,7 @@ body.nav-open {
         transform: translateX(200%); // Changed from translateY(-140%)
         transition: all 0.35s;
     }
+*/
 }
 
 h1.sitename {
@@ -62,11 +89,19 @@ h1.sitename {
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
-    margin: 0;
+    margin: 0 0 0 1rem;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.5rem;
-    transform: rotate(-1deg);
+    transform: rotate(-.5deg);
+
+    @include breakpoint(lg) { // 1024px
+        margin-left: 2rem;
+    }
+
+     @include breakpoint(xl) { // 1280px
+        margin-left: 4rem;
+    }
 
     a { 
         text-decoration: none;
@@ -123,8 +158,6 @@ nav.mainnav {
         padding-inline: 2rem;
     }
 
-
-
 }
 
 ///////////////////////////////
@@ -174,28 +207,28 @@ ul.nav__items {
     all: unset;
     position: relative;
     z-index: 200;
-    height: 2.25rem;
-    background-color: var(--red);
+    height: 3rem;
+    background-color: var(--green);
     will-change: background-color, transform;
     transition: background-color 0.3s ease-in-out;
 
     &:hover {
         cursor: pointer;
         backdrop-filter: none;
-        background-color: var(--green);
+        background-color: var(--yellow);
 
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
-            background-color: var(--yellow);
+            background-color: var(--green);
             transition: background-color 0.3s ease-in-out;
         }
     }
 }
 
 .hamburger__box {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 3rem;
+    height: 3rem;
     display: inline-flex;
     position: relative; // for the spin animation
 }
@@ -204,8 +237,8 @@ ul.nav__items {
     display: block;
     top: calc(50% - 0.05rem);
     left: .5rem;
-    width: 20px;
-    height: .1rem;
+    width: 2rem;
+    height: .2rem;
     background-color: var(--yellow);
     position: absolute;
     transition-property: transform;
@@ -216,19 +249,19 @@ ul.nav__items {
     &::after {
         content: "";
         position: absolute;
-        width: 1.25rem;
-        height: .1rem;
+        width: 2rem;
+        height: .2rem;
         display: block;
         background-color: var(--yellow);
     }
 
     &::before {
-        top: -6px;
+        top: -10px;
         transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in 0s;
     }
 
     &::after {
-        bottom: -6px;
+        bottom: -10px;
         transition: bottom 0.1s ease-in 0.25s,
         transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
     }

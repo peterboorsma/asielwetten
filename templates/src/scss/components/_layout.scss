@@ -29,6 +29,11 @@
 }
 
 .homepage .section {
+
+    &:first-child {
+        padding-block-start: calc( var(--navbarHeight) + 4rem );
+    }
+
     padding-block: 4rem;
 
     @include breakpoint(xl) { // 1280px
@@ -165,7 +170,8 @@
 ////////////////////////////////////////////////////
 
 .article__header {
-    padding-block: 4rem;
+    padding-block-end: 4rem;
+    padding-block-start: calc( var(--navbarHeight) + 4rem );
 }
 
 .article__content {
@@ -193,7 +199,8 @@
 .listing {
 
     .section__header {
-        padding-block: 2rem;
+        padding-block-end: 2rem;
+        padding-block-start: calc( var(--navbarHeight) + 4rem );
 
         //@include breakpoint(xl) { // 1280px
             //padding-block: 8rem;
