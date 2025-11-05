@@ -176,8 +176,8 @@
 
 .article__content {
     padding-block: 4rem;
-    background-color: var(--yellow);
-    color: var(--green);
+    background-color: var(--lightYellow);
+    color: var(--darkGreen);
 
     @include breakpoint(xl) { // 1280px
         padding-block-end: 8rem;

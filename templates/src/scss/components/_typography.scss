@@ -481,14 +481,15 @@ sup.footnote {
     margin-inline-end: .5rem;
     width: 1.25rem;
     height: 1.25rem;
-    background-color: var(--yellow-light);
+    color: var(--lightYellow);
+    background-color: var(--green);
 
     a {
         text-decoration: none;
     }
 
     &:hover {
-        color: var(--yellow);
+        
         background-color: var(--red);
         cursor: pointer;
     }
@@ -521,7 +522,7 @@ ul.footnotes {
         margin-inline-end: .125rem;
         width: 1.25rem;
         height: 1.25rem;
-        background-color: var(--yellow-light);
+        background-color: var(--lightYellow);
     }
 
     span.footnote {
