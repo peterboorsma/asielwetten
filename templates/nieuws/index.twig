@@ -9,6 +9,7 @@
     {% set actueel = craft.entries()
         .section('nieuws')
         .type('nieuws', 'acties')
+        .orderBy('postDate desc')
         .all() %}
 
     <section class="section has-sticker">
