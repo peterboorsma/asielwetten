@@ -1,4 +1,4 @@
-dateModified: 1758526869
+dateModified: 1762339338
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -44,6 +44,7 @@ meta:
     725f9f23-e6fd-4cf8-b49c-b01cc65eb02a: 'Image Grid A4' # Image Grid A4
     1541c9cc-8eac-456a-9dc1-fc556741c310: 'External Link' # External Link
     3288ca7d-f208-402b-bd8f-66be98e80794: Actieblokken # Actieblokken
+    3922af8a-2a76-44df-a459-0bda7e15bc7c: Acties # Acties
     6909af19-442f-4e6d-8d1c-886c431e6d48: Downloads # Downloads
     9000de9d-1885-42a0-8c73-5a2dc54cbeaf: 'Toolkit Thumb' # Toolkit Thumb
     97489fb8-6d23-47bf-9b97-f9d05afe8ce6: Meedoen # Meedoen
@@ -55,7 +56,7 @@ meta:
     a4ff3f12-5dae-4412-b32a-73563e6f0240: 'Matrix Portretten' # Matrix Portretten
     a65636b4-b42f-420a-8621-6c852925574b: Bondgenoten # Bondgenoten
     b7044dc0-9cff-407c-84dc-5b09094eac1e: Homepage # Homepage
-    be1bb913-a0b1-424b-8a5e-ac14789cd99a: Nieuws # Nieuws
+    be1bb913-a0b1-424b-8a5e-ac14789cd99a: 'Nieuws & acties' # Nieuws & acties
     c1c4a87b-7ed0-4bf8-b09a-8ced23b78cbe: 'Rich text' # Rich text
     c4272228-e1b4-42b6-92df-560e599e3ba0: 'SEO Description' # SEO Description
     ca05a040-7552-46ee-9e63-e43b76993591: 'SEO Image' # SEO Image
@@ -76,6 +77,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  cloner:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   embeddedassets:
     edition: standard
     enabled: true

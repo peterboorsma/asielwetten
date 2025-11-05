@@ -6,6 +6,7 @@
     "craftcms/cms": "5.8.19",
     "spicyweb/craft-embedded-assets": "5.4.4",
     "vaersaagod/seomate": "3.2.0",
+    "verbb/cloner": "3.0.2",
     "verbb/footnotes": "5.1.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
