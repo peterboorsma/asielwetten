@@ -6,9 +6,9 @@
 
 {% block content %}
 <main id="main" class="main" tabindex="-1">
-    {% set actueel = craft.entries()
+    {% set acties = craft.entries()
         .section('nieuws')
-        .type('nieuws', 'acties')
+        .type('acties')
         .all() %}
 
     <section class="section has-sticker">
@@ -16,7 +16,7 @@
             <div class="content">
                 <div class="contentblock">
                     <header class="contentblock__header">
-                        <h2 class="pagetitle">Nieuws & acties</h2>
+                        <h2 class="pagetitle">Acties</h2>
                     </header>
 
                     {% include "_partials/nav/_nieuws_typeToggle" %}
@@ -29,10 +29,10 @@
         <div class="section__content">
             <div class="content">
                 <div class="contentblock">
-                    {% if actueel %}
+                    {% if acties %}
                         <div class="newslist">
-                        {% for entry in actueel %}
-                        {% if entry.newsType %}
+                        {% for entry in acties %}
+
                             <a class="newslist__item" href="{{ entry.url }}">
                                 <div class="newslist__item__text">
                                     <h3 class="title">{{ entry.title }}</h3>
@@ -41,14 +41,7 @@
                                     <div class="btn btn--secondary btn--diap-green">→ Lees meer</div>
                                 </div>
                             </a>
-                        {% elseif entry.externalLink %}
-                            <a class="newslist__item icon-outboundlink" href="{{ entry.externalLink }}" target="_blank" rel="noopener">
-                                <div class="newslist__item__text">
-                                        <h3 class="title">{{ entry.title }}</h3>
-                                        <h4 class="pretitle">{{ entry.preTitle }}</h4>
-                                    </div>
-                            </a>
-                            {% endif %}
+
                         {% endfor %}
                         </div>
                     {% endif %}

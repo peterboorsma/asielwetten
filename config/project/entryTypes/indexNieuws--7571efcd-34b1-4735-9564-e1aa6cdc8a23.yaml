@@ -1,0 +1,53 @@
+color: null
+description: null
+fieldLayouts:
+  f9f2090a-4c8f-46e1-8eae-56a932bb5bd3:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-11-05T10:57:26+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5e1c8f21-cedb-450c-80d3-2c0557a03964
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bab46000-47e2-43e6-9144-ecb94079cadc
+        userCondition: null
+handle: indexNieuws
+hasTitleField: true
+icon: folder-tree
+name: 'Index Nieuws'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

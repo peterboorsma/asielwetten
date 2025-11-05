@@ -1,0 +1,18 @@
+{% set currentPath = craft.app.request.pathInfo %}
+<nav class="filter" aria-label="Filter nieuws & acties">
+    <label class="filter__label">Filter:</label>
+
+    <ul class="filter__list">
+        <li class="filter__item">
+            <a href="/actueel" class="filter__option" {% if currentPath == 'actueel' %}aria-current="page"{% endif %}>Toon alles</a>
+        </li>
+
+        <li class="filter__item">
+            <a href="/actueel/nieuws" class="filter__option" {% if currentPath starts with 'actueel/nieuws' %}aria-current="page"{% endif %}>Nieuws</a>
+        </li>
+
+        <li class="filter__item">
+            <a href="/actueel/acties" class="filter__option" {% if currentPath starts with 'actueel/acties' %}aria-current="page"{% endif %}>Acties</a>
+        </li>
+    </ul>
+</nav>

@@ -8,6 +8,10 @@
     RewriteRule (.+) index.php [L]
 </IfModule>
 
+# Redirect naar nieuwe hoofdpagina nieuws & acties
+RedirectMatch 301 ^/nieuws/(.+)$ /actueel/nieuws/$1
+Redirect 301 /nieuws /actueel
+
 # Force .mp4 files to download
 <FilesMatch "\.mp4$">
     Header set Content-Disposition "attachment"

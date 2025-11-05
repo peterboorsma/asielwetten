@@ -18,6 +18,23 @@ fieldLayouts:
             uid: b67b80a5-d7e0-4d71-9eb2-c733bc39a174
             userCondition: null
           -
+            dateAdded: '2025-11-05T15:12:03+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8bef8adf-4ac1-49d2-a684-38350cd67dd2 # Nieuws Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 581fb37d-664a-4f95-9169-bb4e0ca85626
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-07-29T12:31:09+00:00'
             editCondition: null
             elementCondition: null
@@ -201,7 +218,7 @@ fieldLayouts:
 handle: acties
 hasTitleField: true
 icon: megaphone
-name: Acties
+name: 'Actie item'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

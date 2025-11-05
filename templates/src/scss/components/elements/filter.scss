@@ -1,0 +1,61 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .875rem;
+
+    @include breakpoint(md) { // 768px
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    &__label {
+        
+        font-weight: 600;
+        color: var(--lightYellow);
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+
+        @media (min-width: 32rem) {
+            flex-direction: row;
+        }
+
+        @include breakpoint(md) { // 768px
+            gap: 1rem;
+        }
+    }
+
+
+    &__item {
+        display: flex;
+        font-weight: 700;
+    }
+
+    &__option {
+        color: var(--lightYellow);
+        border: 1px solid var(--lightYellow);
+        padding: .25rem .875rem;
+        text-decoration: none;
+        border-radius: 2rem;
+        transition: all .3s ease;
+
+        &:hover,
+        &[aria-current="page"] {
+            color: var(--green);
+            background-color: var(--lightYellow);
+
+        }
+
+    }
+
+}

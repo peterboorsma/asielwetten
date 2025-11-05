@@ -1,0 +1,88 @@
+{% extends "_layouts/default" %}
+
+{% block styles %}
+{% endblock %}
+
+{% block bodyclass %}yellow bg-green entry{% endblock %}
+
+{% block content %}
+
+<main id="main" class="main" tabindex="-1">
+    <article class="article has-sticker">
+        <div class="article__header">
+            <div class="content">
+                <div class="contentblock">
+                    <header class="contentblock__header">
+                        {% if entry.newsType %}
+                        <h2 class="pagetitle">{{ entry.title }}</h2>
+                        {% else %}
+                        <h2 class="pagetitle icon-outboundlink">
+                            <a href="{{ entry.externalLink }}" target="_blank" rel="noreferrer noopener">{{ entry.title }}</a>
+                        </h2>
+                        {% endif %}
+                        {% if entry.preTitle %}<h3 class="pagepretitle">{{ entry.preTitle }}</h3>{% endif %}
+                    </header>
+                </div>
+            </div>
+
+            {% include "_partials/_sticker_petitie.twig" %}
+        </div>
+
+ {# entry.newsType switch ON dan is het een eigen nieuwsbericht #}       
+        <div class="article__content">
+            <div class="content">
+                <div class="contentblock">
+                    <div class="contentblock__meta">
+                        {% if entry.newsType %}
+                        <time datetime="{{ entry.postDate|date('c') }}">{{ entry.postDate|date('d M Y') }}</time>
+                        {% endif %}
+                    </div>
+
+                {% if entry.image.one() %}
+                    {% set img = entry.image.one() %}
+                    <figure class="figure contentblock__figure">
+                        <picture>
+                            <source srcset="{{ img.getUrl({ width: 800 }) }} 800w, {{ img.getUrl({ width: 400 }) }} 400w" sizes="(max-width: 600px) 400px, 800px" type="image/jpeg">
+                            <img src="{{ img.getUrl({ width: 800 }) }}" alt="{{ img.title|raw }}" loading="lazy" width="800" height="auto" />
+                        </picture>
+
+                        <figcaption>{{ img.title|raw }}</figcaption>
+                    </figure>
+                {% endif %}                    
+
+                    {% if entry.richText %}
+                    <div class="contentblock__text">
+                        {{ entry.richText }}
+                    </div>
+                    {% endif %}
+
+                    {% set download = entry.download.one() %}
+                    {% if download %}
+                        <a href="{{ download.url }}" class="btn btn--secondary btn--diap-green btn--download" target="_blank" title="{{ download.title }}">{{ download.title }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="article__footer">
+            <div class="content">
+                <div class="contentblock">
+                    <div class="contentblock__footer">
+                        <div class="btn-group">
+                            <a href="{{ currentSite.baseUrl ~ '/actueel/nieuws' }}" class="btn btn--primary btn--green btn--greenFx btn--arrowRight">
+                                ← Meer nieuws
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+{% include "_partials/_aside.twig" %}
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

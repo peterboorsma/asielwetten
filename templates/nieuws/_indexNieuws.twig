@@ -6,9 +6,9 @@
 
 {% block content %}
 <main id="main" class="main" tabindex="-1">
-    {% set actueel = craft.entries()
+    {% set nieuws = craft.entries()
         .section('nieuws')
-        .type('nieuws', 'acties')
+        .type('nieuws')
         .all() %}
 
     <section class="section has-sticker">
@@ -16,7 +16,7 @@
             <div class="content">
                 <div class="contentblock">
                     <header class="contentblock__header">
-                        <h2 class="pagetitle">Nieuws & acties</h2>
+                        <h2 class="pagetitle">Nieuws</h2>
                     </header>
 
                     {% include "_partials/nav/_nieuws_typeToggle" %}
@@ -29,9 +29,9 @@
         <div class="section__content">
             <div class="content">
                 <div class="contentblock">
-                    {% if actueel %}
+                    {% if nieuws %}
                         <div class="newslist">
-                        {% for entry in actueel %}
+                        {% for entry in nieuws %}
                         {% if entry.newsType %}
                             <a class="newslist__item" href="{{ entry.url }}">
                                 <div class="newslist__item__text">

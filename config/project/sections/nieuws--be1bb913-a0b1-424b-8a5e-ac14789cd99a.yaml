@@ -2,9 +2,16 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 27b18ae2-32be-4e31-a284-73c8bda22e83 # Nieuws
+    uid: 27b18ae2-32be-4e31-a284-73c8bda22e83 # Nieuwsitem
   -
-    uid: 3922af8a-2a76-44df-a459-0bda7e15bc7c # Acties
+    uid: 3922af8a-2a76-44df-a459-0bda7e15bc7c # Actie item
+  -
+    description: 'Nieuws & acties overzichtspagina'
+    uid: 71af71e6-61dc-4da0-b2fc-6fe6a893a9ce # Index Actueel
+  -
+    uid: 7571efcd-34b1-4735-9564-e1aa6cdc8a23 # Index Nieuws
+  -
+    uid: 4a424262-7c01-458f-8ffe-1ee8deffd62b # Index Acties
 handle: nieuws
 maxAuthors: 1
 name: 'Nieuws & acties'
@@ -19,8 +26,8 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: nieuws/_entry.twig
-    uriFormat: 'nieuws/{slug}'
+    uriFormat: '{parent.uri}/{slug}'
 structure:
-  maxLevels: null
+  maxLevels: 3
   uid: 875e19c7-c807-4f6e-80e6-05ac3f7b8a20
 type: structure

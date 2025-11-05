@@ -187,7 +187,7 @@
 
 .article__footer {
     padding-block-end: 4rem;
-    background-color: var(--yellow);
+    background-color: var(--lightYellow);
     color: var(--green);
 
     @include breakpoint(xl) { // 1280px
@@ -200,7 +200,7 @@
 
     .section__header {
         padding-block-end: 2rem;
-        padding-block-start: calc( var(--navbarHeight) + 4rem );
+        padding-block-start: calc( var(--navbarHeight) + 2rem );
 
         //@include breakpoint(xl) { // 1280px
             //padding-block: 8rem;
@@ -478,7 +478,6 @@
     background-color: var(--yellow);
     color: var(--green);
 }
-
 
 .videocontent {
     display: grid;
@@ -957,16 +956,25 @@
 
 .listing .has-sticker .section__header {
     position: relative;
-    padding-block-end: 6rem;
+    padding-block-end: 2rem;
 }
 
 .listing .has-sticker .section__content {
-    padding-block-start: 6rem;
+    padding-block-start: 4rem;
+
+    @include breakpoint(md) { // 768px
+        padding-block-start: 6rem;
+    }
+
 }
 
-.has-sticker .article__header {
+.article.has-sticker .article__header {
     position: relative;
-    padding-block-end: 8rem;
+    padding-block-end: 6.5rem;
+
+    @include breakpoint(md) { // 768px
+        padding-block-end: 8rem;
+    }
 
     @include breakpoint(lg) { // 1024px
         padding-block-end: 10rem;
@@ -974,6 +982,23 @@
 
     @include breakpoint(xxl) { // 1440px
         padding-block-end: 12rem;
+    }
+}
+
+.listing.has-sticker .article__header {
+    position: relative;
+    padding-block-end: 4rem;
+
+    @include breakpoint(md) { // 768px
+        padding-block-end: 6rem;
+    }
+
+    @include breakpoint(lg) { // 1024px
+        padding-block-end: 10rem;
+    }
+
+    @include breakpoint(xxl) { // 1440px
+        padding-block-end: 1rem;
     }
 }
 
@@ -1000,17 +1025,17 @@
         width: 14rem;
     }
 
-    @include breakpoint(xl) { // 1280px
-        width: 16rem;
-    }
+    //@include breakpoint(xl) { // 1280px
+    //    width: 16rem;
+    //}
 
     //@include breakpoint(xxl) { // 1440px
         //width: 18rem;
     //}
 
-    @include breakpoint(xxxl) { // 1920px
-        width: 20rem;
-        right: 4rem;
-    }
+    //@include breakpoint(xxxl) { // 1920px
+    //    width: 20rem;
+    //    right: 4rem;
+    //}
 
 }

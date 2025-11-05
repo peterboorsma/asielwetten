@@ -1,4 +1,31 @@
-dateModified: 1762339338
+dateModified: 1762355523
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Structures
+      key: 'heading:631d9eac-5757-4859-b630-b680f4f39d8e'
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:be1bb913-a0b1-424b-8a5e-ac14789cd99a' # Nieuws & acties
+      tableAttributes:
+        - status
+        - postDate
+        - link
+        - type
+        - 'field:8bef8adf-4ac1-49d2-a684-38350cd67dd2' # Nieuws Type
+        - parent
+      type: native
 email:
   fromEmail: peter@peterboorsma.nl
   fromName: 'Stop de asielwetten'
@@ -23,6 +50,7 @@ meta:
     2fac30b3-8ffa-4d72-82bc-6b144ee5422c: Toolkit # Toolkit
     3faf8b3a-e3cc-4692-bfbc-985c94d95b04: 'Over Ons' # Over Ons
     4a9f7cf2-d218-47f5-95ff-2d0cc5352f63: 'Stop de asielwetten' # Stop de asielwetten
+    4a424262-7c01-458f-8ffe-1ee8deffd62b: 'Index Acties' # Index Acties
     4cf40a11-c76e-44eb-80f8-c4aa33a60e3a: Partnerlink # Partnerlink
     4e92aea7-75c3-4f7b-937d-2f0ebc589124: 'SEO Tags' # SEO Tags
     5a14c6ff-d917-4f5d-915e-c506b6d6a0b9: 'Over ons' # Over ons
@@ -36,16 +64,18 @@ meta:
     8bef8adf-4ac1-49d2-a684-38350cd67dd2: 'Nieuws Type' # Nieuws Type
     13a5845c-6563-46a1-a757-6aa9fa6bccc1: 'SEO tags' # SEO tags
     17b994ad-10c2-454d-b160-9332d3c9c7c9: 'Plain Text Single Line' # Plain Text Single Line
-    27b18ae2-32be-4e31-a284-73c8bda22e83: Nieuws # Nieuws
+    27b18ae2-32be-4e31-a284-73c8bda22e83: Nieuwsitem # Nieuwsitem
     50a60e17-d1c8-475a-919f-6c83d37659b0: Footnotes # Footnotes
     50c8fd1f-41a5-4eb3-a37b-f145992ab7d7: 'Afbeelding ' # Afbeelding 
     69d1818b-d0bf-4642-a91a-23ce88b22b53: Info # Info
+    71af71e6-61dc-4da0-b2fc-6fe6a893a9ce: 'Index Actueel' # Index Actueel
     376a6806-e956-461c-ab22-fad5f338b120: Simple # Simple
     725f9f23-e6fd-4cf8-b49c-b01cc65eb02a: 'Image Grid A4' # Image Grid A4
     1541c9cc-8eac-456a-9dc1-fc556741c310: 'External Link' # External Link
     3288ca7d-f208-402b-bd8f-66be98e80794: Actieblokken # Actieblokken
-    3922af8a-2a76-44df-a459-0bda7e15bc7c: Acties # Acties
+    3922af8a-2a76-44df-a459-0bda7e15bc7c: 'Actie item' # Actie item
     6909af19-442f-4e6d-8d1c-886c431e6d48: Downloads # Downloads
+    7571efcd-34b1-4735-9564-e1aa6cdc8a23: 'Index Nieuws' # Index Nieuws
     9000de9d-1885-42a0-8c73-5a2dc54cbeaf: 'Toolkit Thumb' # Toolkit Thumb
     97489fb8-6d23-47bf-9b97-f9d05afe8ce6: Meedoen # Meedoen
     403337d2-6afd-4c66-a774-914c6b106274: Toolkit # Toolkit
@@ -102,7 +132,7 @@ system:
   name: 'Stop de asielwetten'
   retryDuration: null
   schemaVersion: 5.8.0.3
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Amsterdam
 users:
   allowPublicRegistration: false
   defaultGroup: null
