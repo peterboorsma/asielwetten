@@ -38,13 +38,13 @@ body.nav-open {
     background-color: var(--green);
 
     &--visible {
-        transform: translateX(0); // Changed from translateZ(0)
+        transform: translateX(0);
         will-change: transform;
         transition: all 0.35s;
     }
 
     &--hidden {
-        transform: translateY(-100%); // Changed from translateY(-140%)
+        transform: translateY(-100%);
         transition: all 0.35s;
     }
 
